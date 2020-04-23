@@ -1,0 +1,183 @@
+\documentclass[11pt]{article}
+
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{gensymb}
+
+\title{Superposición de Ondas}
+\author{Molina Escobar Carlos\\Benitez Alanis Rodrigo Moctezuma\\Ortiz Benhumea Jose Rogelio}
+\date{}
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/Ondas_p3/} }
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+ Se denomina interferencia a la superposición o suma de dos o más ondas. Dependiendo fundamentalmente de las longitudes de onda, amplitudes y de la distancia relativa entre las mismas se distinguen dos tipos de interferencias: 
+Constructiva: se produce cuando las ondas chocan o se superponen en fases, obteniendo una onda resultante de mayor amplitud que las ondas iniciales.
+ Destructiva: es la superposición de ondas en anti-fase, obteniendo una onda resultante de menor amplitud que las ondas iniciales; Estos conceptos son las directrices con las que se basan las observaciones de esta practica.
+\end{abstract}
+
+\begin{multicols}{2}
+
+\section{Objetivo}
+	Analizar las figuras de Lissajous mediante la superposición de ondas.
+\section{Téoria}
+		
+		\subsection{Superposición de Ondas.}
+Cuando dos o más movimientos ondulatorios alcanzan un mismo punto a la vez en el medio material por el que avanzan, se nos plantea el problema de saber qué tipo de perturbación se experimenta en ese punto como consecuencia de las dos ondas que inciden sobre él. A esto se le denomina interferencia, que es el resultado de dos o más ondas del mismo tipo en un mismo medio.
+
+			\subsubsection{Interferencia Constructiva}
+
+La interferencia destructiva se produce cuando dos pulsos viajan en sentido contrario pero desfasados en $90^{\circ}$, o sea uno va por la parte superior del medio y el otro por la inferior, de manera que al interferir las amplitudes de ambos se restan, dando como resultado un pulso de menor amplitud, que en el caso de ser de igual amplitud los pulsos incidentes, se anula por completo.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.3\textwidth]{superposicion_1}
+	\captionof{figure}{}
+    \label{fig:mesh1}
+\end{Figuras}
+
+			\subsubsection{Interferencia Destructiva.}
+
+La interferencia constructiva es la que nos proporciona un máximo, donde las dos amplitudes se suman, dando como resultado un pulso de mayor amplitud que los incidentes, pero que después cada uno sigue con su misma velocidad y dirección.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.3\textwidth]{superposicion_2}
+	\captionof{figure}{}
+    \label{fig:mesh2}
+\end{Figuras}
+
+			\subsubsection{Batidos.}
+
+Este fenómeno es un caso particular de interferencia. Cuando dos trenes de ondas de igual amplitud, pero frecuencias ligeramente diferentes coinciden en el espacio, dan lugar a una vibración cuya amplitud varía con el tiempo. Si se trata de ondas sonoras, estas variaciones de amplitud se percibirán como variaciones de sonoridad, o lo que es lo mismo, aumentos o disminuciones periódicas de intensidad, que se denominan batidos o pulsaciones.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.7\textwidth]{superposicion_3}
+	\captionof{figure}{}
+    \label{fig:mesh3}
+\end{Figuras}
+
+			\subsubsection{Onda estacionaria.}
+
+En una cuerda vibrante, la onda resultante de la superposición de la onda incidente y reflejada es una onda estacionaria. En una onda estacionaria, es posible distinguir ciertos puntos llamados Nodos y Antinodos. Los nodos son los puntos de la cuerda que permanecen en reposo sin vibrar, mientras que los antinodos son los puntos de la cuerda que vibran con la máxima amplitud.
+
+La onda estacionaria formada en una cuerda vibrante tiene una cantidad de nodos y antinodos característica que varía dependiendo de la tensión y de la longitud de la cuerda. Mientras más grave es el sonido menor es la cantidad de nodos y de antinodos.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{superposicion_4}
+	\captionof{figure}{}
+    \label{fig:mesh4}
+\end{Figuras}
+
+		\subsection{Curva de Lissajous.}
+
+En matemáticas, la curva de Lissajous, también conocida como figura de Lissajous o curva de Bowditch, es la gráfica del sistema de ecuaciones paramétricas correspondiente a la superposición de dos movimientos armónicos simples en direcciones perpendiculares
+Esta familia de curvas fue investigada por Nathaniel Bowditch en 1815 y después, con mayores detalles, por Jules Antoine Lissajous.
+Tales trayectorias dependen de la relación de frecuencias angulares $\frac{\omega x}{\omega y}$ y de la diferencia de fase.
+Las curvas son cerradas si el movimiento se repite a intervalos regulares de tiempo. Curiosamente, esto sólo es posible si las frecuencias angulares de ambos movimientos son conmensurables, es decir, si su cociente es racional.
+ En el caso en el que el cociente de frecuencias no sea una fracción racional, la trayectoria será abierta y la partícula nunca pasará dos veces por un mismo punto del plano con la misma velocidad. Se puede demostrar que, en tal caso, la partícula "llenará" todo el rectángulo una vez haya transcurrido un tiempo suficientemente largo. Dicho rectángulo tendrá un largo igual al doble de una de las amplitudes y un ancho igual al doble de la otra amplitud.
+
+\section{Desarrollo Experimental}
+
+	\subsection{Material y equipo}
+	\begin{itemize}
+
+		\item 1 Osciloscopio de $30 Mhz$
+		\item 1 Generador de señales digital
+		\item 1 Generador de señales
+		\item 2 Cables BNC-BNC
+
+	\end{itemize}
+
+		\subsection{Actividad 1}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{superposicion_5}
+	\captionof{figure}{}
+    \label{fig:mesh5}
+\end{Figuras}
+
+En la figura  \ref{fig:mesh5} observamos parte de de la conexión utilizada en esta practica; observamos el osciloscopio y uno de los dos generadores de funciones.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{superposicion_6}
+	\captionof{figure}{Señal senoidal generada aleatoriamente}
+    \label{fig:mesh6}
+\end{Figuras}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{superposicion_7}
+	\captionof{figure}{Posición de las periilas de la escala correspondientes a la figura \ref{fig:mesh6}}
+    \label{fig:mesh7}
+\end{Figuras}
+
+Pese a que generemos una señal senoidal aleatoriamente podemos conocer su periodo y por lo tanto su frecuencia, esto gracias a  las figuras \ref{fig:mesh6} y \ref{fig:mesh7}. Ambas imagenes  corresponden al osciloscopio, con el cual deducimos que las divisiones de tiempo son de $0.5 ms$, por lo tantom, el tiempo que tarda en repetirse la señal (periodo) es aproximadamente de $2.8 ms$; para obtener la frecuancia simplemente utilizamos $\nu=\frac{1}{T}$, y nos da como resultado $357.14 Hz$.\\
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1\textwidth]{superposicion_t1}
+\end{Figuras}
+
+		\subsection{Actividad 2}
+
+Para esta segunda parte tomamos como referencia las conexiones de la figura \ref{fig:mesh5}, dado que, en esta seccion observamos la superposición de dos ondas de frecuancias en la mayoria de los casos, diferentes entre si. La figura 8 muestra los diferentes patrones que puede tener las figuras de Lissajous; los patrones dependen de la relación de las ondas que se superpongan.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{superposicion_8}
+	\captionof{figure}{Figuras de Lissajous}
+    \label{fig:mesh8}
+\end{Figuras}
+
+.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1\textwidth]{superposicion_t2}
+\end{Figuras}
+
+Tal como lo marcan la figura \ref{fig:mesh8}, obtuvimos resultados bastante congruentes comparados con los de Lissajous, inclusive si cambiamos el multiplo de la frecuencia con la que se interactua. 
+
+\section{Conclusiones}
+
+	\subsection{Benitez Alanis Rodrigo Moctezuma}
+	¿Qué pasa cuando dos ondas generadas en un medio se encuentran? ¿Cuál es el resultado de dicho encuentro? Este fenómeno, ¿tiene una forma física y/o visual de estudio?
+Esta práctica dio respuestas a estas tres preguntas, dando lugar a un tema llamado superposición. El objetivo era claro, generar dos ondas cuyas frecuencias debían asemejarse para dar paso a la primera figura descrita por el físico y matemático Jules Antoine Lissajous, en la cual, el describía que cuando hay una misma frecuencia en ambas ondas se formarían 3 tipos de figuras. La primera iniciando en una diagonal que corta por el centro al plano cartesiano, consecuentemente pasaría a formar un ovalo y un circulo regular, esto por supuesto al paso del tiempo y a la variación de frecuencia que se suscitaba por el mismo.
+Ahora bien, a raíz de estas tres primeras figuras, ¿qué pasa al variar la frecuencia de un solo generador? En consecuencia, lo que observamos fue que hay otras figuras que se forman a partir de dicha tergiversación, esto como resultado de que las ondas se encuentran desfasadas en ciertos puntos o extremos en el espacio tiempo, de ahí la razón de la modificación en su geometría.
+Constato que, si hay un medio por el cual estos fenómenos pueden ser estudiados, no solo con el uso de herramientas digitales, como sería el generador y el osciloscopio, si no que en base al estudio exacto podemos determinar estas figuras de forma analógica con tan solo utilizar un poco de arena o pintura colocada dentro de un péndulo sostenido por un sistema mecánico que nos permita los grados de movilidad adecuados para arrastras este al origen del movimiento que darán vida a las figuras geométricas que se analizaron en clase. Es decir, en efecto estas figuras tienen un medio físico y visual el cual puede ser estudiado más a detalle por medio de las matemáticas y explicado con ayuda de la física, un efecto que sin duda tiene un horizonte en muchas de las ramas de las ciencias exactas y particulares de las mismas como es la acústica, la arquitectura y ramas de origen cultural como sería la música (que ya se ha dicho que esta tiene una comprensión puramente matemática en su núcleo de estudio). 
+
+	\subsection{Molina Escobar Carlos}
+	Gracias a la utilización de una herramienta tan importante en la carrera de ingeniería comunicaciones y electrónica, como lo es el osciloscopio, fue posible observar el efeto de superposición de dos ondas. La forma con que se interfieren las ondas ya ha sido descrita por Jules Antoine Lissajous, por lo que pudimos clasificar adecuadamente los patrones resultantes en base a las relaciones ya establecidas.
+
+	\subsection{Ortiz Benhumea Jose Rogelio}
+	Se encontraron distintas figuras de Lissajous gracias al uso de los osciloscopios que nos ayudaron a conocer un poco más sobre el concepto de superposición de ondas, se aprendió a utilizar las frecuencias de ambos osciladores para poder encontrar dichas figuras. Gracias a el experimento pudimos indicar que si se cumple la teoría de superposición de ondas. Se comprobó la teoría de superposición de ondas mediante la utilización de dos osciloscopios que sirvieron para el manejo de frecuencias. Se analizaron las imágenes de Lissajous las cuales ayudan a comprobar dicha teoría
+
+\section{Bibliografia}
+Crawford Jr. Ondas, Berkeley Physics Course. Editorial Reverté. (1977)\\
+Serway. Física. Editorial McGraw-Hill (1992).
+
+\end{multicols}
+
+	\begin{flushright}
+	•
+	\end{flushright}
+
+
+\end{document}

@@ -1,0 +1,14 @@
+*.pdf
+*.aux
+*.sublime-project
+*.sublime-workspace
+*.jpg
+*.png
+*.ind
+*.fls
+*.idx
+*.ilg
+*.gz
+*.fdb_latexmk
+*.log
+*.rar

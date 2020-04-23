@@ -1,0 +1,324 @@
+\documentclass[11pt]{article}
+
+
+\title{Multímetro}
+\author{2CV5\\Equipo 4\\\\Molina Escobar Carlos\\Victoria Zúñiga Mario Alberto\\Parada Velazquez Kevin Osvaldo}
+\date{}
+
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{booktabs,chemformula}
+\usepackage{verbatim}
+\usepackage[document]{ragged2e}
+
+\makeindex
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/EyM_imagenes_3/} }
+
+
+\begin{document}
+	
+\maketitle
+
+\begin{abstract}
+	El buen uso del multímetro es vital para cualquier estudiante de la carrera de Ingeniería de comunicaciones y electrónica, por lo que esta práctica tiene como objetivo de describir correctamente las características y el funcionamiento del multímetro. Para cumplir el objetivo es preciso realizar varias mediciones diferentes con el multímetro; estos elementos a medir son: resistencia, corrientes y tensión.
+\end{abstract}
+
+
+\begin{multicols}{2}
+\section{Introduccion}
+	\subsection{Multímetro: ¿Cómo se hace para medir?}
+Un multímetro es un instrumento de medida. Un amperímetro mide
+intensidad de corriente, un voltímetro mide la diferencia de potencial
+entre dos puntos (voltaje), y un óhmetro mide resistencia. Un
+multímetro combina estas funciones, y además algunas otras
+adicionales, en un mismo instrumento.
+Antes de empezar en los detalles sobre multímetros, es importante que
+tengas las ideas claras de cómo se conectan en los circuitos. Las figuras 1 y 2 muestran un circuito antes y después de conectar un amperímetro:
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.5\textwidth]{multimetro_1}
+	\captionof{figure}{Para medir intensidad de corriente, el circuito debe abrirse para
+permitir que el amperímetro se conecte en serie.}
+    \label{fig:mesh1}
+\end{Figuras}
+
+Piensa en los cambios que debieras tener que hacer a un circuito
+práctico para incluir el amperímetro. Para empezar, necesitas abrir el
+circuito así el amperímetro puede conectarse en serie. Toda la corriente
+que fluye en el punto del circuito a medir debe pasar a través del
+amperímetro. Se supone que los instrumentos no alteran el
+comportamiento del circuito, o al menos no significativamente, y se
+deduce que un amperímetro debe tener una muy resistencia
+interna.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.58\textwidth]{multimetro_2}
+	\captionof{figure}{Los amperímetros suelen tener una resistencia propia muy baja.}
+    \label{fig:mesh2}
+\end{Figuras}
+
+
+La figura 3  muestra el mismo circuito después de conectar un
+voltímetro: esta vez, no necesitas abrir el circuito. El voltímetro es
+conectado en paralelo entre los dos puntos donde se realiza la
+medición. Dado que el voltímetro provee un camino paralelo, este
+debería tomar en lo posible muy poca corriente. En otras palabras, un
+voltímetro debe tener una resistencia muy alta.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.5\textwidth]{multimetro_3}
+	\captionof{figure}{Para medir diferencia de potencial (voltaje), el circuito no se
+cambia: el voltímetro se conecta en paralelo con el componente del
+circuito.}
+    \label{fig:mesh3}
+\end{Figuras}
+
+Un óhmetro no funciona con un circuito conectado
+a la fuente de alimentación. Si quieres medir la
+resistencia de un componente en particular, debes
+quitarlo por completo del circuito y medirlo
+separadamente, como muestra la figura 4:
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{multimetro_4}
+	\captionof{figure}{para medir resistencia, el componente debe ser
+quitado por completo del circuito. Un óhmetro trabaja haciendo pasar una corriente a
+través del componente que se quiere medir}
+    \label{fig:mesh4}
+\end{Figuras}
+
+Los óhmetros funcionan haciendo pasar una pequeña corriente a través del componente y midiendo el
+voltaje producido sobre el mismo. Si lo intentas hacer con el componente conectado en el circuito y
+alimentado con una fuente, lo más probable es que el instrumento será dañado. La mayoría de los
+multímetros tiene un fusible que ayuda a protegerlo ante estas imprudencias o uso inadecuado.
+
+	\subsection{Multímetros digitales}
+Los multímetros son diseñados y fabricados en serie por
+ingenieros electrónicos. Aún el tipo más simple y más barato
+puede incluir características las cuales es probable que no
+uses. Los instrumentos digitales dan una salida numérica,
+normalmente sobre un display de cristal líquido.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{multimetro_5}
+	\captionof{figure}{}
+    \label{fig:mesh5}
+\end{Figuras}
+
+La figura 5 muestra un multímetro de rango conmutado:
+El conmutador central tiene muchas posiciones y tú debes
+elegir la más apropiada para la medición que vas a realizar.
+Si el mando es colocado para 20 VDC, por ejemplo, entonces
+20 V es el máximo voltaje que puede ser medido. Este valor
+es a veces llamado 20 V fsd, donde fsd es la abreviatura de
+deflexión fondo de escala.
+Para circuitos con fuentes de alimentación de hasta 20 V, lo
+cual incluye todos los circuitos que probablemente
+construyas, el rango de voltajes 20 VDC es el más útil. El
+rango DC (direct current: corriente continua) está indicado
+sobre el instrumento por:
+
+Algunas veces, querrás medir voltajes más pequeños, y en
+este caso, son usados los rangos de 2 V o 200 mV.
+¿Qué significa DC? DC significa corriente continua.
+Cualquier circuito que funciona con una fuente de tensión
+estable, tal como una batería, la corriente siempre fluye en la
+misma dirección. Cada circuito o proyecto construido en
+este Curso trabaja de esta manera.
+AC significa alternating current (corriente alterna). En
+una lámpara eléctrica conectada en la red doméstica, la
+corriente fluye primero de una manera, luego de otra. Esto
+es, la corriente se invierte de polaridad, o se alterna, en
+dirección.
+
+El rango de voltaje AC es probable que casi no lo uses. Su símbolo en el instrumento es:
+
+\subsubsection{¿Dónde están conectadas las dos puntas de prueba?}
+La de color negro está siempre conectada dentro de la clavija o conector marcado como COM,
+abreviatura de COMMON (común, masa, 0 V). La punta de color rojo es conectada dentro de la clavija
+V, $\omega$ para medir con voltímetro u óhmetro o en la de A como amperímetro o miliamperímetro (para el
+modelo que hay en el Taller). El conector o clavija de 10 A (10 amperios) sólo se usa cuando queremos
+medir grandes corrientes de hasta 10 A y esto es muy raro en la mayoría de los circuitos que verás.
+
+\section{Material y equipo}
+	\begin{itemize}
+
+		\item1  Multímetro digital.
+		\item1 Multímetro análogo.
+		\item1 Pila tipo “D” de 1.5v.
+		\item1 Pila de valor desconocido.
+		\item1 Protoboard.  
+		\item3 Jumper (Macho-Macho).
+		\item2 Jumper (Hembra - Macho).
+		\item2 Cables “caimán - banana”
+		\item2 Cables “banana – banana”
+		\item1 Fuente de alimentación regulada.
+		\item6 Resistencias de carbono de KΩ (los alumnos deben llevarlas).
+
+	\end{itemize}
+
+\section{Desarrollo experimental}
+	\subsection{Reconocimiento del multímetro.}
+	
+	\subsection{Mediciones de resistencia (óhmetro).}
+
+	\begin{itemize}
+
+		\item Encienda el multímetro y coloque la perilla en ohms.
+		\item Anote los valores utilizando el código de colores para resistencias.
+		\item Mida las resistencias proporcionadas y anote el valor obtenido en la tabla.
+		\item Compare el valor nominal con el valor medido.
+
+	\end{itemize}
+
+	\subsection{Mediciones de continuidad}
+
+Utilizando un medidor en continuidad (buzzer) o en la escala de resistencia más baja identifique como está constituido un protoboard, dispositivo frecuentemente utilizado en la carrera para elaborar circuitos sencillos de las aplicaciones estudiadas en esta asignatura o en otras posteriores.
+
+	\subsection{Mediciones de voltaje (voltímetro)}
+
+	\begin{itemize}
+
+		\item Medida de voltaje de pilas/baterías.
+		\item Coloque la perilla del multímetro en volts y ubique correctamente el selector de tipo de corriente (ca/cd) en cd.
+		\item Mida el voltaje de las pilas.
+		\item Utilice la fuente regulada, ubique las salidas de corriente directa y realice 3 (tres) mediciones diferentes respetando la polaridad.
+
+	\end{itemize}
+
+
+	\subsection{Mediciones de voltaje de corriente alterna (vóltmetro).}
+
+	\begin{itemize}
+
+		\item Mediciones de voltaje de corriente alterna (vóltmetro).
+		\item Ubique un contacto como el mostrador en la figura en su mesa de trabajo.
+		\item Mida el voltaje entre salidas.
+		\item Identifique en el contacto cual es la fase, el neutro y la tierra física.
+	\end{itemize}
+
+	\subsection{Mediciones de intensidad de corriente eléctrica continúa (amperímetro).}
+
+	\begin{itemize}
+
+		\item Arme el siguiente circuito.
+			\begin{Figuras}
+				\centering
+    				\includegraphics[width=0.9\textwidth]{multimetro_6}
+				\captionof{figure}{}
+			    	\label{}
+			\end{Figuras}
+		\item Seleccione la escala de medición adecuada y el selector de cd/ca colóquelo en cd.
+		\item Mida la corriente.
+	\end{itemize}
+
+\section{Resultados}
+	\subsection{Reconocimiento del multímetro.}
+	
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.4\textwidth]{multimetro_7}
+	\captionof{figure}{Multimetro marca PeakTech modelo  2005}
+    \label{fig:mesh7}
+\end{Figuras}
+
+Este multímetro simplemente se enciende con un botón. El multímetro tiene varios selectores para medir corriente continua y alterna, así como, tensión de la misma manera, además, tiene varias escalas que permiten ir del orden de los milis hasta los megas.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{multimetro_8}
+	\captionof{figure}{La medicion de los resistores se realiza en paralelo}
+    \label{fig:mesh8}
+\end{Figuras}
+
+	\subsection{Mediciones de resistencia (óhmetro).}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1.2\textwidth]{multimetro_9}
+\end{Figuras}
+
+	\subsection{Mediciones de continuidad}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{multimetro_10}
+	\captionof{figure}{La protoboard esta contituida de filas y columnas: las filas conforman nodos conectados entre si y las columnas no, ademas, estan las barras laterales que forman 2 nodos separados cada una}
+    \label{fig:mesh9}
+\end{Figuras}
+	
+	\subsection{Mediciones de voltaje (voltímetro).}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{multimetro_11}
+	\captionof{figure}{Para la primera pila(izquierda) obtuvimos 1.06V  y para la segunda(Derecha) 6.18V}
+    \label{fig:mesh10}
+\end{Figuras}
+
+Asi mismo con la fuente regulada  hicimos 3 mediciones diferentes de 1.48V, 4.38V y 14.57V
+
+	\subsection{Mediciones de voltaje de corriente alterna (vóltmetro).}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{multimetro_12}
+	\captionof{figure}{Realizamos 3 mediciones en 3 contactos diferentes: 125.9V, 25.2V y 127.1V respectivamente}
+    \label{fig:mesh11}
+\end{Figuras}
+
+	\subsection{Mediciones de intensidad de corriente eléctrica continúa (amperímetro).}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{multimetro_13}
+	\captionof{figure}{Las mediciones de corriente en un circuito se tiene que hacer con el multimetro en serie con la fuente	 y el elemento a medir. La corriente en este caso nos dio 10.21 mA}
+    \label{fig:mesh12}
+\end{Figuras}
+
+Por la ley de Ohm tenemos:
+
+$$I= \frac{V}{R}$$
+
+Sustituyendo:
+$$I= \frac{10V}{1K\Omega} = 10mA$$
+
+Por lo que nos queda un valor muy aproximado al del multímetro 
+
+\section{Conclusiones}
+
+\subsection{Molina Escobar Carlos}
+
+El multímetro es una herramienta indispensable para cualquier estudiante y profesional involucrado con la electrónica, ya que este puede realizar mediciones bastante precisas de varias unidades, como lo son, la corriente, tensión, capacitancia resistencia entere otras; a esto se le agrega la capacidad de trabajar en corriente continua y directa.
+
+\subsection{Parada Velazquez Kevin Osvaldo}
+Como sabemos el multímetro es un instrumento que permite medir diferentes magnitudes eléctricas. Nos ayuda para prevenir algún corto o falla dentro de nuestra instalación eléctrica o circuito. Y saber las propiedades que tiene dicha cantidad de energía para poder usar el tipo de resistencias adecuadas. 
+
+
+\subsection{Victoria Zúñiga Mario Alberto}
+El multímetro es un aparato de medición con el cual podemos detectar problemas de corriente en sistemas electrónicos y eléctricos o incluso solos para verificar y analizar mejor el comportamiento de la corriente eléctrica en distintas situaciones.
+
+
+\section{Bibliografia}
+Serway, Raymond A. y John W. Jewett, Jr. Electricidad y magnetismo. Novena edición. ISBN: 978-607-522-490-9.\\
+http://roble.pntic.mec.es/jlop0164/archivos/multimetro.pdf
+
+\end{multicols}
+
+
+\end{document}

@@ -1,0 +1,271 @@
+\documentclass[11pt]{article}
+
+
+\title{Conocimiento y Manejo Del Osciloscopio}
+\author{2CV5\\Equipo 4\\\\Molina Escobar Carlos\\Victoria Zúñiga Mario Alberto\\Parada Velazquez Kevin Osvaldo\\Santana Martínez Jesús Gerardo\\Tovar Urrea Roberto Fausto}
+\date{}
+
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{booktabs,chemformula}
+\usepackage{verbatim}
+\usepackage[document]{ragged2e}
+
+\makeindex
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/EyM_imagenes_4/} }
+
+
+\begin{document}
+	
+\maketitle
+
+\begin{abstract}
+	La práctica consta de realizar distintas acciones con el osciloscopio, que es un instrumento que tiene como función trazar gráficas en el plano que representa las variaciones de tensión (x) en el tiempo (y). Con el  se efectuaron actividades, como calibrarlo y hacer mediciones.
+\end{abstract}
+
+
+\begin{multicols}{2}
+
+\section{Objetivo}
+	Al realizar esta práctica se conseguira:
+	\begin{itemize}
+	
+		\item Identificar las perillas y botones requeridos para un empleo básico del osciloscopio.
+		\item Calibrar el osciloscopio en frecuencia y voltaje 
+		\item Efectuará la medición de tensiones directas y alternas
+		\item Realizará la medición de la frecuencia y periodo de una señal.
+
+	\end{itemize}
+
+
+\section{Introducción}
+	Los osciloscopios pueden ser analógicos o digitales. Los primeros trabajan directamente con la señal aplicada, está una vez amplificada desvía un haz de electrones en sentido vertical proporcionalmente a su valor. En contraste los osciloscopios digitales utilizan previamente un conversor analógico-digital (A/D) para almacenar digitalmente la señal de entrada, reconstruyendo posteriormente esta información en la pantalla.
+	Ambos tipos tienen sus ventajas e inconvenientes. Los analógicos son preferibles cuando es prioritario visualizar variaciones de la señal de entrada en tiempo real. Los osciloscopios digitales se utilizan cuando se desea visualizar y estudiar eventos no repetitivos (picos de tensión que se producen aleatoriamente).
+	El osciloscopio es un instrumento extremadamente rápido, trazas gráficas en el plano $X-Y$, (carátula) de una señal con respecto a otro o bien con respecto al tiempo, por medio de un Tubo de Rayos Catódicos (TRC). Este TRC emite un haz de electrones, que en la pantalla se transforma en un punto luminoso, el cual actúa como un pincel que se desplaza por la zona de representación siguiendo las variaciones de la tensión de entrada. En la mayoría de las aplicaciones, la entrada del eje Y (vertical), es la que recibe la señal procedente de la tensión que está siendo examinada obteniéndose un punto luminoso en sentido vertical, de acuerdo con el valor instantáneo de la tensión. La señal de entrada al eje $X$ (horizontal), procede normalmente de un generador de rampa lineal de voltaje. Este generador está generalmente en el interior del osciloscopio y la rampa que produce el generador, desplaza al punto luminoso uniforme de izquierda a derecha por la pantalla. El punto luminoso, por lo tanto dibuja una curva que muestra la variación de la tensión de entrada respecto al tiempo.
+	Si la señal a examinar se repite durante un tiempo suficiente, si representación en la pantalla permanecerá fija. De este modo, el osciloscopio se convierte en un medio para hacer visibles tensiones que varían en el tiempo. Por consiguiente, el osciloscopio puede considerarse como un instrumento universal en géneros de la investigación electrónica. todos los
+	En la pantalla del osciloscopio se pueden representar ondas senoidales, cuadradas, impulsos o cualquier otro tipo de señales. La característica más importante de las señales mencionadas es principalmente, que pertenecen al grupo de las señales alternas, es decir, que en cada ciclo completo tienen una parte positiva y una negativa pasando por cero, por tanto, tendrán una determinada frecuencia, es decir, una cantidad de ciclos completos por seguro ($Hz$). Por lo tanto, en esta práctica se medirán períodos y con esto obtendrán las frecuencias, a través de su interrelación matemática
+
+\section{Material y Equipo}
+
+	\begin{itemize}
+		\item Paquete de baterías
+		\item Punta de prueba
+		\item Osciloscopio de 30 $MHz$ 
+		\item Generador de funciones digital 
+		\item Cable BNC - Caimán
+		\item Cable BNC - BNC
+	\end{itemize}
+
+
+
+
+\section{Desarrollo}
+		\subsection{Conocimiento del osciloscopio}
+
+			\begin{itemize}
+				\item Registre la marca, modelo y especificaciones del instrumento Conocimiento del osciloscopio
+				\item Identifique los botones, perillas de control, interruptores, salida de prueba, y las entradas y los tipos de conector.
+				\item ¿De cuántos canales consta el equipo?
+				\item Las perillas de VOLTS/DIV (en ocasiones VOLTS/cm, una u otra, ¿Cuántas posiciones tienen y cuáles son los rangos que miden?
+				\item La perilla de TIME/DIV (en ocasiones TIME/cm) ¿Cuántas posiciones tiene y cuáles son los rangos que se pueden seleccionar?
+				\item Observe cuantas divisiones tiene por eje ¿De qué medida son y en que fracciones se encuentran divididas?
+				\item Cuántas entradas tiene y cuáles son sus características?
+				\item Revise la punta de prueba e identifique sus características.
+			\end{itemize}
+
+
+	\subsection{Calibración.}
+			
+			Para encenderlo pulse el botón de encendido, y accione el control de brillantez, cuidando que el haz no sea muy intenso sobre la pantalla pues la daña. Accione el control de ajuste del canal de entrada CH1 CH2 según el que se vaya a utilizar, verificando que el otro canal quede en posición de apagado (El Interruptor deslizable MODE se debe encontrar en la posición CH1 o CH2).
+			El proceso de calibración se realiza antes de iniciar el uso específico del equipo, no siendo necesario conectar punta de prueba, y en general consiste en (refiriéndonos al equipo.
+
+			\begin{enumerate}
+				\item Las perillas de la fila superior (INTEN, POSITION, TRIGG LEVEL, POSITION, VARIABLE) se deben colocar en la parte media de su giro. De la misma manera, la perilla FOCUS de la fila 2.
+				\item Los botones (X1 X5, NORM INV, SLOPE + -, X1 X10, CA VAR) se deben colocar en la posición de sueltos, El interruptor deslizable MODE debajo del botón SLOPE coloca en la posición AUT.
+				\item La perilla de VOLT/DIV se colocará al inicio en la marca de 0.1 mV.
+				\item La perilla por encima de VOLTS/DIV se debe girar en la dirección de CALIB, marcada en el panel alrededor de la perilla inferior, hasta el tope debiéndose sentir un click. El ajuste en la otra perilla correspondiente al CH2 debe ser similar. Estas perillas posteriormente no deben moverse por ningún motivo
+				\item Los interruptores deslizables por debajo de cada perilla de VOLTS/DIV se colocan inicialmente en GND.
+				\item En cuanto al botón rotatorio TRACE ROTATION, este permanece como se encuentra y sólo puede ser movido por un técnico.
+				\item El interruptor deslizable TRIGGER SOURCE se coloca en la ubicación de CH1.
+				\item La perilla de TIME/DIV inicialmente se colocará en 0.1 ms.
+				\item Finalmente, realizando estos pasos la traza en la pantalla del osciloscopio se debe encontrar en la parte media vertical.
+			\end{enumerate}
+
+	\subsection{Verificación de las características de la salida de prueba.}
+
+		Para verificar que el osciloscopio proporciona información confiable y se encuentra calibrado en medición se utiliza la salida de prueba (PROBE). Mediante la ejecución de los siguientes pasos se lleva a cabo:
+		\begin{enumerate}
+			\item  Conecte una punta de prueba en el canal que haya seleccionado (CH1 o CH2). El interruptor deslizable debajo de la perilla del canal se coloca en GND.
+			\item  El extremo con la punta do caimán se coloca en la entrada de TIERRA y la punta con gancho (utilizar esta pieza cuidadosamente, para evitar que se maltrate) se debe sujetar a la salida de prueba.
+			\item  El interruptor deslizable se mueve a la posición de AC, con lo cual aparecerá una señal.
+			\item  Obsérvese la señal que muestra la traza e identifíquese el voltaje (eje vertical) y el tiempo de un ciclo (periodo) (eje horizontal). La traza mostrará a una señal identificada como señal cuadrada, y la medida de voltaje corresponderá a la indicada en la salida de prueba y el periodo será el correspondiente a una frecuencia de 1000 Hz, esto último es determinado por el fabricante del instrumento y generalmente corresponde a lo señalado, la consulta del manual del equipo es obligada.
+			\item  Mida los valores y verifique si corresponden a mencionado en el párrafo anterior.
+			
+			\item Mediciones de tensiones directas o continuas
+			En esta actividad, realice los siguientes pasos:
+			\item  Conecte la punta de prueba al canal CH1 o CH2, el interruptor deslizable se debe encontrar en la posición de GND y la traza se debe ubicar en la división central (no es obligado)
+			\item  La perilla de VOLTS/DIV se colocará entre 0.5 y 2 V.
+			\item  Los extremos de la punta de prueba se conectan al paquete de baterías conservando la polaridad.
+			\item  Mueva el interruptor deslizable a la posición DC y observe el movimiento de la traza, mida las divisiones que se haya movido y determine la tensión del paquete de baterías.
+		\end{enumerate}
+				
+
+	\subsection{Medición de amplitud y frecuencia de una señal.}
+		Realizar el siguinte procedimiento
+
+		\begin{enumerate}
+			\item Conecte un extremo del cable BNC-BNC a un canal de su elección (CH1 o CH2). El interruptor deslizable por debajo del canal seleccionado se debe encontrar en la posición GND y la traza se debe ubicar en la división central. El otro extremo se debe conectar a la salida del generador de señales.
+			\item Coloque la perilla de VOLTS/DIV en la posición de 0.5 o1 V y la base de tiempo TIME/DIV en 1 ms.
+			\item Conecte el generador a la línea y enciéndalo.
+			\item En el generador de señales seleccione una señal senoidal y una frecuencia, ubicando las perillas de cantidad, una en 10" y la otra girándola a un valor de su elección entre 1 y 10.
+			\item Deslice el interruptor a la posición AC y observe la pantalla, si la señal se muestra correctamente proceda a determinar la amplitud y el periodo de la misma.
+			\item En el caso de que la señal no sea observable satisfactoriamente, consulte a su profesor, ylo mueva cuidadosamente las perillas de VOLTS/DIV y/o TIME/DIV hasta que esta aparezca y pueda ser medible, proceda como en el paso anterior.
+			\item Realice cuatro mediciones más.
+		\end{enumerate}
+
+
+\section{Resultados}
+
+		\subsection{Calibración}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_1}
+			    \captionof{figure}{Osciloscopio marca ``PeakTech`` de dos canales}
+			    \label{fig:mesh1}
+			\end{Figuras}
+
+			En la figura \ref{fig:mesh1} observamos el osciloscopio. A la derecha de la pantalla se encuentran las perrilla de seleccion, entre ellas estan  las perillas de VOLTS/DIV y la perilla de TIME/DIV, ambas con subdivisiones; en VOLTS/DIV tenemos desde $5V$ hasta $5mV$ y en TIME/DIV van desde $0.2s$ hasta $2\mu s$.
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_2}
+			    \captionof{figure}{Puntas de prueba del Osciloscopio}
+			    \label{fig:mesh2}
+			\end{Figuras}
+
+		\subsection{Verificación de las características de la salida de prueba.}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_3}
+			    \captionof{figure}{Calibracion con las puntas de prueba de osciloscopio. Aparece una señal cuadrada.}
+			    \label{fig:mesh3}
+			\end{Figuras}
+
+
+		\subsection{Verificación de las características.}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_4}
+			    \captionof{figure}{Seña de la bateria con division de $0.5V$.}
+			    \label{fig:mesh4}
+			\end{Figuras}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_5}
+			    \captionof{figure}{Seña de la bateria con division de $1V$.}
+			    \label{fig:mesh5}
+			\end{Figuras}
+
+			En base a lo observado en las figuras \ref{fig:mesh4} y \ref{fig:mesh5}, deducimos que, el osciloscopio cambia la posición de la señal dependiendo de las subdivisiones del voltaje que seleccionemos.
+
+		\subsection{Medición de amplitud y frecuencia de una señal.}
+		
+			Para esta sección tomamos el generador de funciones de la fugura \ref{fig:mesh6} para generar 4 diferentes señales de las figuras \ref{fig:mesh7}, \ref{fig:mesh8}, \ref{fig:mesh9}, \ref{fig:mesh10},  \ref{fig:mesh11}  y llenar la tabla.
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_6}
+			    \captionof{figure}{Generador de funciones.}
+			    \label{fig:mesh6}
+			\end{Figuras}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_7}
+			    \captionof{figure}{Señal a $10^0$.}
+			    \label{fig:mesh7}
+			\end{Figuras}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_8}
+			    \captionof{figure}{Señal a $10^1$.}
+			    \label{fig:mesh8}
+			\end{Figuras}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_9}
+			    \captionof{figure}{Señal a $10^2$.}
+			    \label{fig:mesh9}
+			\end{Figuras}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_10}
+			    \captionof{figure}{Señal a $10^3$.}
+			    \label{fig:mesh10}
+			\end{Figuras}
+
+			\begin{Figuras}
+				\centering
+			    \includegraphics[width=0.9\textwidth]{osciloscopio_11}
+			    \captionof{figure}{Señal a $10^4$.}
+			    \label{fig:mesh11}
+			\end{Figuras}															
+
+			\begin{Figuras}	
+				\centering
+			    \includegraphics[width=1.2\textwidth]{tabla_1}
+			\end{Figuras}
+
+			Debido a dificultades con el generador de funcione, las lecturas no fueron muy buenas, para la tabla tomamos los estables valores mas proximados a un promedio.
+
+
+\section{Conclusiones} 
+
+
+		\subsection{Molina Escobar Carlos}
+
+			El osciloscopio es una herramienta con una curva de dificultad mas empinada que otras, por ejemplo, el multímetro. Para utilizar bien el osciloscopio es necesario experimentar con el constantemente y así poder utilizarlo a todo su potencial.
+			En la práctica se comprobó el uso las subdivisiones con las escalas de las perillas, y si, el osciloscopio es bastante mas preciso que un multímetro
+
+
+		\subsection{Santana Martínez Jesús Gerardo}
+
+			La práctica fue una muy buena herramienta que nos ayudó a conocer un poco más sobre el osciloscopio el cual es una de las herramientas mas importantes para el ingeniero en el día a día ya que con sus múltiples funciones nos ayudaron a conocer cómo se veían las distintas señales a través de diferentes tipos de frecuencias. En mi opinión falto un poco de atención hacia lo que implica el uso del mismo porque cada componente tiene un tiempo de vida útil y con el paso del tiempo el desgaste que implica que las observaciones y mediciones sean más difíciles de observar lo que hace que nos tardemos mas en hacer las actividades de la practica o no salgan resultados deseados
+
+		\subsection{Kevin Osvaldo Parada Velazquez}
+
+			El osciloscopio me parece una excelente herramienta para crear gráficas con respecto al tiempo de una señal y onda eléctrica, y entre más frecuencia tenga una señal eléctrica, más rápido será su movimiento y menos perceptible que parecerá solo una línea continua.
+
+		\subsection{Victoria Zúñiga Mario Alberto}
+
+			 Puedo comprender mejor   la utilidad del osciloscopio gracias a las actividades efectuadas en el laboratorio.
+
+		\subsection{Tovar Urrea Roberto Fausto}
+
+			Conclusión: La práctica nos enseñó que hace el osiloscopio y nos permitió experimentar el manejo de este,  como calibrarlo, reconocer sus características y la medición de amplitud y frecuencia de una señal utilizando um generador de funciones.												
+
+\section{Bibliografia}
+
+\textit{Manual de prácticas electricidad y magnetismo, Revisión 2019, Instituto Politecnico Nacional Escuela Superior de Ingeniería Mecanica y Electrica, Departamentp de Ingeniería de Comunicaciones y Electronica} 
+
+
+\end{multicols}
+
+\end{document}

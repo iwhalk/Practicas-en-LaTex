@@ -1,0 +1,281 @@
+\documentclass[11pt]{article}
+
+\usepackage{multicol}
+\usepackage[document]{ragged2e}
+\usepackage{booktabs,chemformula}
+\usepackage[spanish]{babel}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/Ondas_p3/} }
+
+
+\begin{document}
+
+superscript: $$2x^3$$
+$$2x^{4+5}$$
+$$2x^{X^{2+2}+5}$$
+
+subscripts:
+$$x_1$$
+$$x_{12}$$
+$${x_1}_2$$
+
+letras griegas:
+$$\pi$$
+$$\beta$$
+$$A=\pi r^2$$
+
+funciones trigonometricas:
+$$y=\sin{x}$$
+$$y=\cos{x}$$
+
+funciones logaritmicas:
+$$\log_5{x}$$
+$$\ln{y}$$
+
+raices:
+
+$$\sqrt{2}$$
+$$\sqrt[3]{2}$$
+$$\sqrt[5]{2\alpha^{x+1}}$$
+
+Fracciones:\\
+Ejemplo:	Cerca de $\displaystyle{\frac{3}{4}}$ de los estudiantes.
+
+$$\{a,b,c\}$$
+
+$$\$2.5$$
+
+$$3\left(\frac{5}{3}\right)$$
+$$3\left|\frac{5}{3}\right.$$
+
+$$\left. \frac{}{•}{dy}{dx} \right|_{x=1}$$
+
+
+
+\begin{comment}
+
+\begin{table*}
+\centering
+  \begin{tabular}{@{}ccccc@{}}
+    \toprule
+    Mi [Kg] & x[m] & F[Nm] & Fx[Nm] & $X_2[m^2]$\\
+    \midrule
+	\ch0.0 & 0 & & & \\			
+	\ch0.050 & 0.021 & 0.49 & 0.01029 & $4.41x10^{-4}$\\
+	\ch0.100	& 0.038 & 0.98 & 0.03724 & $1.444 x10^{-5}$\\
+	\ch0.150 & 0.057 & 1.47 & 0.0837 & $3.249 x10^{-5}$\\
+	\ch0.200	& 0.076 & 1.96 & 0.1489 & $5.776 x10^{-5}$\\
+	\ch0.250	& 0.094 & 2.45 & 0.2303 & $8.836 x10^{-5}$\\
+	\ch0.300	& 0.112 & 2.94 & 0.3841 & 0.012544\\
+	\ch0.350	& 0.124 &3.43 & 0.442 & 0.016641\\
+	\ch0.400	& 0.149 & 3.92 &0.5840 & 0.22201\\
+    \bottomrule
+  \end{tabular}
+  \caption{}
+\end{table*}
+
+
+
+\begin{table*}
+  \centering
+  \begin{tabular}{@{}ccccc@{}}
+    \toprule
+m[Kg]&	M[Kg]&	t[s]&	T[s]&	$T^2 [s]$\\
+\midrule
+\ch 0.100&	0.121&	8.40&	1.44&	2.07\\
+\ch 0.200&	0.221&	11.35&	1.94&	3.79\\
+\ch \centering0.250	0.271	&12.62	2.15	4.65\\
+\ch 0.300&	0.321&	13.67&	2.34&	5.50\\
+\ch 0.350&	0.371&	14.76&	2.52&	6.36\\
+\ch j0.400&	0.421&	15.95&	2.68&	7.22\\
+\ch 0.450&	0.471&	16.84&	2.84&	8.08\\
+    \bottomrule
+  \end{tabular}
+  \caption{}
+\end{table*}
+
+
+\begin{table*}
+  \centering
+\begin{tabular}{@{}cc@{}}
+\toprule
+Amplitudes pequeñas&Amplitudes grandes\\
+  \begin{tabular}{@{}cccccccccccc@{}}
+    \toprule
+ $\theta$ &	2&	3&	4&	5&	6&	10&	20&	30&	40&	50&	60\\
+\midrule
+\ch t(s)&	24.3&	24.4&	24.4&	24.5&	24.3&	24.5&	24.7&	24.6&	24.9&	25.1&	25.2\\
+\ch T(S)&	2.43&	2.44&	2.44&	2.45&	2.43&	2.45&	2.47&	2.46&	2.49&	2.51&	2.52\\
+    \bottomrule
+  \end{tabular}
+\end{tabular}
+  \caption{}
+\end{table*}
+
+\end{comment}
+
+\begin{table*}
+  \centering
+  \begin{tabular}{@{}cccc@{}}
+    \toprule
+Caso&Frecuencia $\nu _1[Hz]$&	Frecuencia $\nu _2[Hz]$&Figura\\
+\midrule
+$\frac{\omega _1}{\omega _2}$		&	160	&	160	&	\includegraphics[width=0.11\textwidth]{superposicion_9}\\
+\midrule
+$\frac{\omega _1}{2 \omega _2}$	&	80	&	160	&	\includegraphics[width=0.11\textwidth]{superposicion_10}\\
+\midrule
+$\frac{ 2\omega _1}{\omega _2}$	&	322	&	160	&	\includegraphics[width=0.11\textwidth]{superposicion_11}\\
+\midrule
+$\frac{\omega _1}{3 \omega _2}$	&	83	&	250	&	\includegraphics[width=0.11\textwidth]{superposicion_12}\\
+\midrule
+$\frac{3 \omega _1}{\omega _2}$	&	750	&	250	&	\includegraphics[width=0.11\textwidth]{superposicion_13}\\
+\midrule
+$\frac{3 \omega _1}{2 \omega _2}$	&	375	&	250	&	\includegraphics[width=0.11\textwidth]{superposicion_14}\\
+\midrule
+$\frac{3 \omega _1}{4 \omega _2}$	&	187	&	250	&	\includegraphics[width=0.11\textwidth]{superposicion_15}\\
+\midrule
+$\frac{5 \omega _1}{4 \omega _2}$	&	327	&	250	&	\includegraphics[width=0.11\textwidth]{superposicion_16}\\
+\midrule
+$\frac{\omega _1}{5 \omega _2}$	&	50	&	250	&	\includegraphics[width=0.11\textwidth]{superposicion_17}\\
+\midrule
+$\frac{5 \omega _1}{\omega _2}$	&	1250	&	250	&	\includegraphics[width=0.11\textwidth]{superposicion_18}\\
+ \bottomrule
+  \end{tabular}
+  \caption{}
+\end{table*}
+
+\begin{table*}
+  \centering
+\begin{tabular}{@{}cc@{}}
+\toprule
+Amplitudes pequeñas&Amplitudes grandes\\
+  {\begin{tabular}{@{}ccccccc@{}}
+    \toprule
+ $\theta$ &	2&	3&	4&	5&	6&	10\\
+\midrule
+\ch t(s)&	24.3&	24.4&	24.4&	24.5&	24.3&	24.5\\
+\ch T(S)&	2.43&	2.44&	2.44&	2.45&	2.43&	2.45\\
+    \bottomrule
+  \end{tabular}}&
+{\begin{tabular}{@{}ccccccc@{}}
+    \toprule
+20&	30&	40&	50&	60\\
+\midrule
+\ch 24.7&	24.6&	24.9&	25.1&	25.2\\
+\ch 2.47&	2.46&	2.49&	2.51&	2.52\\
+    \bottomrule
+  \end{tabular}}
+
+\end{tabular}
+  \caption{Para 1.5 metros}
+\end{table*}
+
+
+\begin{table*}
+  \centering
+\begin{tabular}{@{}cc@{}}
+\toprule
+Amplitudes pequeñas&Amplitudes grandes\\
+  {\begin{tabular}{@{}ccccccc@{}}
+    \toprule
+ $\theta$ &	2&	3&	4&	5&	6&	10\\
+\midrule
+\ch t(s)&	14.5&	19.4&	19.4&	19.4&	19.5&	19.6\\
+\ch T(S)&	1.45&	1.94&	1.94&	1.94&	1.95&	1.96\\
+    \bottomrule
+  \end{tabular}}&
+{\begin{tabular}{@{}ccccccc@{}}
+    \toprule
+20&	30&	40&	50&	60\\
+\midrule
+\ch 	20.6&	20.5&	20.8&	20.5&	20.7\\
+\ch 	2.06&	2.05&	2.08&	2.05&	2.07\\
+    \bottomrule
+  \end{tabular}}
+
+\end{tabular}
+  \caption{Para 1.0 metro}
+\end{table*}
+
+
+\begin{table*}
+  \centering
+\begin{tabular}{@{}cc@{}}
+\toprule
+Amplitudes pequeñas&Amplitudes grandes\\
+  {\begin{tabular}{@{}ccccccc@{}}
+    \toprule
+ $\theta$ &	2&	3&	4&	5&	6&	10\\
+\midrule
+\ch t(s)&	13.9&	14.3&	14.3&	14.1&	14.5&	14.5\\
+\ch T(S)&	1.39&	1.43&	1.43&	1.41&	1.45&	1.45\\
+    \bottomrule
+  \end{tabular}}&
+{\begin{tabular}{@{}ccccccc@{}}
+    \toprule
+20&	30&	40&	50&	60\\
+\midrule
+\ch 	14.6&	14.5&	14.5&	14.4&	14.5\\
+\ch 	1.46&	1.45&	1.45&	1.44&	1.45\\
+    \bottomrule
+  \end{tabular}}
+
+\end{tabular}
+  \caption{Para 0.5 metros}
+\end{table*}
+
+\begin{table*}
+  \centering
+  \begin{tabular}{@{}ccccc@{}}
+    \toprule
+Esfera& 	$t(s)$&	$T=\frac{t}{n(s)}$&	$\delta T=\delta \frac{t}{u(s)}$& \\
+\midrule
+\ch No. 1(pesada)&	19.57&	1.957&	0.001&	0.0001\\
+\ch No.2 (ligera)&	18.93&	1.893&	0.001&	0.0001\\
+    \bottomrule
+  \end{tabular}
+  \caption{Esfera1 $T1=1.9571$, Esfera 2 $T2=1.8931$}
+
+\end{table*}
+
+\begin{table*}
+  \centering
+  \begin{tabular}{@{}ccccc@{}}
+    \toprule
+Resistencia&	Colores&	Tolerancia&	Valor nominal (ohms)&	Valor medido (ohms)\\
+\midrule
+1&	Café, Violeta, Rojo&	+/- 5\% &	2700&	2660 \\
+2&	Café, Gris, Rojo&	+/- 5\%&	1800  &	1780 \\
+3&	Rojo, Rojo, Naranja&	+/- 5\%&	22000 &	21600 \\
+4&	Café, Negro, Rojo&	+/- 5\%&	1000 &	9990  \\
+5&	Verde, Azul, Rojo&	+/- 5\%&	5600 &	5560  \\
+6&	Verde, Azul, Café&	+/- 5\%&	560 &	550\\
+    \bottomrule
+  \end{tabular}
+  \caption{}
+\end{table*}
+
+
+
+\begin{table*}
+  \centering
+  \begin{tabular}{@{}cccccc@{}}
+    \toprule
+Frecuencia en el generador ($Hz$) & $55x10^0$ & $55x10^1$ & $55x10^2$ & $55x10^3$ & $55x10^4$\\ 
+\midrule
+Periodo en el Osciloscopio ($s$)&	 $20m$     &	 2m    &	  $20\mu$   &    $2\mu$        &    $0.2\mu$     \\
+\midrule
+Frecuencia en el osciloscopio($Hz$) &     50     &  500    &   5000   &     50000       &    500000     \\
+    \bottomrule
+  \end{tabular}
+  \caption{}
+\end{table*}
+
+$$x \in \left[\frac{7}{2}, \infty\right)$$
+
+$$x \in \left[\frac{7}{2}, 6\right)$$
+
+\end{document}

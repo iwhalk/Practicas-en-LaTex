@@ -1,0 +1,247 @@
+\documentclass[11pt]{article}
+
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{gensymb}
+
+\title{Péndulo Simple}
+\author{Molina Escobar Carlos\\Benitez Alanis Rodrigo Moctezuma\\Urban Casillas Cristian Felipe\\Ortiz Benhumea Jose Rogelio\\Gutiérrez Ruíz Diego Manuel\\Etzael Lara Coronado\\Martin Eduardo Tolentino Valencia}
+\date{}
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/Ondas_p2/} }
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	El péndulo simple (también llamado péndulo matemático o péndulo ideal) es un sistema idealizado constituido por una partícula de masa m que está suspendida de un punto fijo o mediante un hilo inextensible y sin peso. Naturalmente es imposible la realización práctica de un péndulo simple, pero si es accesible a la teoría. El péndulo simple o matemático se denomina así en contraposición a los péndulos reales, compuestos o físicos, únicos que pueden construirse. El péndulo de torsión consiste en un hilo o alambre de sección recta circular suspendido verticalmente, con su extremo superior fijo y de cuyo extremo inferior se cuelga un cuerpo de momento de inercia I conocido o fácil de calcular (disco o cilindro). Cualquier movimiento puede descomponerse como combinación de movimientos lineales y de rotación. Un péndulo físico o péndulo compuesto es cualquier cuerpo rígido que pueda oscilar libremente en el campo gravitatorio alrededor de un eje horizontal fijo, que no pasa por su centro de masa.
+\end{abstract}
+
+
+\begin{multicols}{2}
+
+\section{Objetivo}
+Determinar cómo influyen en el periodo de una oscilación de un péndulo simple la amplitud de oscilación y la masa del péndulo, saber la relación que existe entre la longitud y el cuadrado del periodo de dicho movimiento, obtener la aceleración de la gravedad utilizando el periodo y la longitud del péndulo simple.
+
+\section{Téoria}
+
+	\subsection{Péndulo Simple}
+	Se denomina péndulo simple (o péndulo matemático) a un punto material suspendido de un hilo inextensible y sin peso, que puede oscilar en torno a una posición de equilibrio. La distancia del punto pesado al punto de suspensión se denomina longitud del péndulo simple. Nótese que un péndulo matemático no tiene existencia real, ya que los puntos materiales y los hilos sin masa son entes abstractos. En la práctica se considera un péndulo simple un cuerpo de reducidas dimensiones suspendido de un hilo inextensible y de masa despreciable comparada con la del cuerpo. 
+El péndulo matemático describe un movimiento armónico simple en torno a su posición de equilibrio, y su periodo de oscilación alrededor de dicha posición está dada por la ecuación:
+$$T=2\pi \sqrt{\frac{L}{g}}$$
+Donde $L$ representa la longitud medida desde el punto de suspensión hasta la masa puntual y $g$ es la aceleración de la gravedad en el lugar donde se ha instalado el péndulo.
+Cuando el péndulo se encuentra en reposo, en vertical, permanece en equilibrio ya que la fuerza peso es contrarrestada por la tensión en la cuerda.	
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1\textwidth]{pendulo_1}
+	\captionof{figure}{Fuerzas que intervienen en un péndulo simple de masa m que se encuentra en su posición de equilibrio (izquierda) o desplazado respecto a la vertical (derecha)}
+    \label{fig:mesh1}
+\end{Figuras}
+
+Cuando se separa de la posición de equilibrio la tensión contrarresta solo a la componente normal del peso, siendo la componente tangencial del peso la fuerza resultante. Esta fuerza es la responsable de que aparezca una aceleración $ F = m a$ que trata de devolver al péndulo a su posición de equilibrio.
+
+	\subsection{Componentes tangencial y normal de una fuerza}
+
+	También son llamadas componentes intrínsecas. Para definirlas utilizamos un sistema de referencia intrínseco en cada punto de la trayectoria.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1\textwidth]{pendulo_2}
+	\captionof{figure}{En cada punto de la trayectoria de un péndulo podemos definir un sistema de referencia en el que uno de los ejes tiene su dirección tangente a la trayectoria y el otro perpendicular a esta.}
+    \label{fig:mesh2}
+\end{Figuras}
+
+Es importante observar en la figura \ref{fig:mesh2}, que el sistema de referencia se establece para cada punto de la trayectoria: Uno de los ejes es tangente a la trayectoria en ese punto. El otro es perpendicular al primero, es decir, normal a la trayectoria en ese punto.
+
+Una vez establecidos los ejes en cada punto de la trayectoria podemos descomponer las fuerzas en estos ejes:
+
+\begin{itemize}
+	\item \textbf{Componente tangencial}: Es la proyección de la fuerza sobre el eje tangente.\\
+	\item \textbf{Componente normal}: Es la proyección de la fuerza sobre el eje normal.
+\end{itemize}
+
+	\subsection{El péndulo simple como oscilador armónico.}
+Si las oscilaciones tienen mucha amplitud el péndulo describe un arco. La trayectoria está bastante alejada de la propia de un \textit{M.A.S.} (sobre el eje  $x$). El movimiento, aunque es oscilatorio, no puede considerarse armónico simple. Si las oscilaciones tienen poca amplitud, la trayectoria seguida por el péndulo se aproxima bastante a la propia de una \textit{M.A.S.}, ya que entonces arco y cuerda se confunden. Además, la fuerza puede considerarse que apunta, con poco error, en la dirección de la recta $x$.
+
+Por lo tanto, un péndulo simple se comporta como un oscilador armónico cuando oscila con amplitudes pequeñas. La fuerza restauradora es la componente tangencial del peso, de valor $Pt$,  y la aceleración del péndulo es proporcional al desplazamiento pero de sentido contrario, con expresión:
+
+$$a=\frac{-g}{l x}$$
+Donde:
+\begin{itemize}
+	\item $\displaystyle{\textbf{a}}$: Aceleración del péndulo. Depende de la distancia a la posición de equilibrio $x$. Su unidad de medida en el Sistema Internacional es el metro por segundo al cuadrado $\frac{m}{s^2}$\\
+	\item $\displaystyle{\textbf{g}}$:Aceleración de la gravedad. Su valor es $\frac{9.8m}{s^2}$
+	\item $\displaystyle{\textbf{l}}$: Longitud del péndulo. Su unidad de medida en el Sistema Internacional es el metro $m$
+	\item Para pequeñas oscilaciones un péndulo simple se comporta como un oscilador armónico de constante $k=\frac{mg}{L}$.
+\end{itemize}
+	\subsection{Comprobación.}
+	Un oscilador armónico no es más que una partícula que se mueve según un \textit{M.A.S.} La aceleración que aparece en el péndulo cuando se separa de su posición de equilibrio hace que el péndulo vibre u oscile en torno a su posición de equilibrio. Dichas vibraciones siguen el patrón de un movimiento armónico simple si el ángulo de oscilación es pequeño (no más de $15\degree$ o $20\degree$). Esto implica que:
+
+$$\sin{(\alpha)\approx \alpha}$$
+
+La longitud de la trayectoria curva $s$ y el desplazamiento $x$ en el eje horizontal tienden a igualarse; La aceleración normal es despreciable. Se puede considerar que la trayectoria del móvil es horizontal y la posición viene dada por la separación $x$ a la vertical de equilibrio; con lo anterior queda:
+
+$$P t=-mg\sin{(\alpha)}\approx-m g \alpha = \frac{m g s}{l} = m a$$
+
+Dónde: $s=l\alpha$
+
+Con lo que podemos afirmar que la aceleración es proporcional al desplazamiento, pero de sentido contrario, siendo:
+
+$$a=\frac{-g}{l x}$$
+
+	\subsection{Periodo del péndulo simple.}
+	El periodo del péndulo simple, para oscilaciones de poca amplitud, viene determinado por la longitud de este y la gravedad. Donde no influye la masa del cuerpo que oscila ni la amplitud de la oscilación.
+El periodo del péndulo simple es el tiempo que tarda el péndulo en volver a pasar por un punto en el mismo sentido. También se define como el tiempo que tarda en hacerse una oscilación completa. Su valor viene determinado por:
+$$T=2\pi \sqrt{\frac{L}{g}}$$
+
+De donde:
+\begin{itemize}
+	\item $\displaystyle{\textbf{T}}$: Periodo del péndulo. Su unidad de medida en el Sistema Internacional es el segundo ($s$\\
+	\item $\displaystyle{\textbf{l}}$: Longitud del péndulo. Su unidad de medida en el Sistema Internacional es el metro $m$\\
+	\item $\displaystyle{\textbf{g}}$: Gravedad. Su unidad de medida en el Sistema Internacional es el metro por segundo al cuadrado $\frac{m}{s^2}$
+\end{itemize}
+
+	\subsection{¿Cómo determinar el valor de la gravedad con un péndulo?}
+La expresión anterior nos permite calcular el periodo conocidas la longitud del péndulo y el valor de la gravedad. Siguiendo el proceso inverso podemos determinar el valor de la gravedad. Conocida la longitud l, medimos el tiempo que tarda el péndulo en realizar una oscilación completa y aplicamos la siguiente expresión, despejada de la expresión del periodo anterior:
+$$g=\frac{(2\pi T)2l m}{s^2}$$
+
+
+\section{Desarrollo Experimental}
+
+	\subsection{Material y equipo}
+	\begin{itemize}
+
+		\item 1 Trasportador.
+		\item 1 Calibrador Vernier.
+		\item 1 Cronómetro.
+		\item 1 Flexómetro.
+		\item 1 Péndulo con hilo cáñamo esfera ligera (elaborado por el alumno).
+		\item 1 Péndulo con hilo cáñamo esfera pesada (elaborado por el alumno).
+
+	\end{itemize}
+
+	\subsection{Experimento 1. Influencia de la amplitud de oscilación en el periodo de un péndulo.}
+	El primer experimento trataba de variar la longitud del cable (hilo) que sujetaba al péndulo y hacerlo oscilar los grados indicados en la tabla, la cual tenía 6 grados $(2\degree, 3\degree, 4\degree, 5\degree, 6\degree y 10\degree)$ pequeños y 5 grados $(20\degree, 30\degree, 40\degree, 50\degree y 60\degree)$ mayores.
+Para ello, usamos las tuberías que se encontraban ubicadas en la parte superior del laboratorio para amarrar uno de los extremos del hilo midiendo así 3 diferentes longitudes y poder hacer los diferentes cuerpos oscilantes. El primero conto con una longitud de 50cm, el segundo con 1m y el tercero con metro y medio, a los cuales se les sujeto la misma masa que, en nuestro caso, fue un cargador de celular marca Lenovo y Huawei como se muestra en la figura \ref{fig:mesh3}.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.8\textwidth]{pendulo_3}
+	\captionof{figure}{}
+    \label{fig:mesh3}
+\end{Figuras}
+
+Finalmente, al contar con los tres cuerpos oscilantes armados, procedimos a darles una oscilación de acuerdo a los grados que se nos indicaba en la práctica (que previamente ya mencionamos), para ello usamos el trasportador el cual ubicamos en el centro de la cuerda y de este modo tomamos el extremo del cuerpo (en este caso del cargador) y lo jalamos hacia un lado a modo de conseguir los grados necesarios. Una vez satisfechos con la marca de inicio, lo soltamos y dejamos esperar 2 oscilaciones para iniciar el conteo de su tiempo con ayuda del cronometro, manteniéndolo así durante 10 oscilaciones antes de detener dicho conteo y obtener así el periodo, dividiendo el tiempo entre el número de oscilaciones.
+Este procedimiento fue repetido 3 veces con las diferentes longitudes proporcionadas.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1\textwidth]{cuadro_1}
+	
+    \label{fig:mesh55}
+\end{Figuras}
+
+	\subsection{Experimento 2. Influencia de la masa.}
+	Para este experimento únicamente usamos aquella extensión de cable que tenía como longitud la de $1m$ y se varió la masa que se encontraba suspendida. En este caso fueron usados como masas un cargador de celular y una roca semicircular, esto con la finalidad de exagerar el versus que se estaba llevando a cabo entre los pesos.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.8\textwidth]{pendulo_4}
+	\captionof{figure}{}
+    \label{fig:mesh4}
+\end{Figuras}
+
+Por otro lado, una constante además de la longitud fue el ángulo al cual se dejó oscilar ambos cuerpos, el cual fue de 2\degree. En este caso también hicimos uso de un cronometro y un compás, uno midiendo el tiempo en base a las 10 oscilaciones a partir de que lo dejamos oscilar libremente 2 veces antes de comenzar con el conteo y usando el compás para medir de forma adecuada el ángulo requerido. 
+Este proceso lo repetimos 2 veces con la finalidad de dar un resultado más exacto y corroborado a raíz de un segundo intento, proceso el cual fue repetido del mismo modo al cambiar la masa.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1.2\textwidth]{cuadro_2}
+	
+    \label{fig:mesh56}
+\end{Figuras}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1.2\textwidth]{cuadro_3}
+	
+    \label{fig:mesh57}
+\end{Figuras}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1.2\textwidth]{cuadro_4}
+	
+    \label{fig:mesh58}
+\end{Figuras}
+
+	\subsection{Experimento 3. Relación entre longitud y el periodo de un péndulo simple.}
+	Finalmente, este último experimento tuvo semejanza con el primero pues lo único que hicimos fue variar la longitud de un metro e irla disminuyendo de 20 en 20 hasta llegar a $40cm$ y después cortarlo a $25cm$ donde termino la experimentación. Cabe destacar que se usó la misma masa que desde un principio fue propuesta, la cual podía ser de un peso pesado ó ligero. En nuestro caso fue utilizado un cargador simulando el peso ligero.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.4\textwidth]{cuadro_5}
+	
+    \label{fig:mesh59}
+\end{Figuras}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=1\textwidth]{cuadro_6}
+	
+    \label{fig:mesh60}
+\end{Figuras}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{cuadro_7}
+	
+    \label{fig:mesh61}
+\end{Figuras}
+
+\section{Conclusiones}
+
+	\subsection{Benitez Alanis Rodrigo Moctezuma}
+	El objetivo de la practica fue examinar el fenómeno del péndulo simple variando 2 de sus fundamentos teóricos vistos en clase, los cuales son la longitud y la masa, con un ajuste angular para hacerlos oscilar.
+Demostramos la modificación que hay en el periodo de oscilación cuando se le varia la longitud, periodo el cual aumenta según el largo del cable y por ende disminuye cuando el cable es reducido, dicho en otras palabras, a mayor longitud el tiempo de completar un ciclo aumenta y a menor longitud el tiempo se reduce.
+Confrontamos las mismas longitudes variando únicamente las masas que se sujetaban a los extremos de los cuerpos oscilantes. Estas masas dejaron al descubierto que hay una variación de la amplitud máxima a la que oscila el cuerpo y la rapidez a la que lo hace, de modo que entre más pequeña es la longitud y más grande el peso, las oscilaciones tendrán un mayor alcance y una rapidez mayo, caso contrario con una masa más simple, pues el alcance se mantiene al mínimo y la rapidez se reduce.  
+Al unir estas dos observaciones doy por hecho que la oscilación de un péndulo depende de la longitud al que se le coloque y la masa que se le asigne. Si queremos una mayor velocidad en el recorrido y una amplitud rayando los 90\degree es conveniente tener una dimensión pequeña del cuerpo de oscilación con la adición de una masa grande para que su velocidad sea una de las más agresivas. Sí por el contrario queremos una oscilación más armoniosa y remarcada es necesario usar una longitud bastante adecuada y un objeto de un peso ligero para que el tiempo de recorrido sea largo y extenso, y el fenómeno en cuestión se pueda apreciar de forma clara. En un último caso, si queremos el mismo efecto de un recorrido armónico y remarcado con ayuda de una masa pesada, es necesario adecuar la longitud de modo que la masa sea distribuida a lo largo del cable y se trasforme en una masa completamente equilibrada con el sistema mecánico presentado.
+
+	\subsection{Urban Casillas Cristian Felipe}
+	Se puede deducir que el periodo que se obtiene en los experimentos depende de manera mínima respecto a la masa y a la amplitud, únicamente depende de la longitud del cordón en conjunto con la aceleración de la gravedad, por lo tanto, se deben tomar en cuenta las condiciones donde se realizan las mediciones, ya que la gravedad es diferente en distintos lugares. Así mismo para que el péndulo simple se comporte como un M.A.S. se deben tener en cuenta ángulos pequeños debido a la modificación o alteración observada sobre la tensión en la cuerda. 
+
+	\subsection{Ortiz Benhumea Jose Rogelio}
+	Se determinó la influencia de la amplitud y la masa de un péndulo sobre las oscilaciones del péndulo simple, también se dedujo basado en los datos que obtuvimos que la longitud del péndulo simple es directamente proporcional al cuadrado del periodo. Puedo concluir que la amplitud y la masa influyen directamente e inversamente, respectivamente proporcionales al periodo. Podemos medir el valor de la gravedad utilizando un péndulo simple y no necesariamente experimentos de caída libre, utilizando variables como la longitud, el periodo y constantes como en número $\pi$. También se concluye que el periodo de un péndulo es directamente proporcional a la raíz cuadrada de su longitud. Esto significa que el periodo de un péndulo puede aumentar o disminuir de acuerdo a la raíz cuadrada de la longitud de ese péndulo.
+
+	\subsection{Gutiérrez Ruíz Diego Manuel}
+	La longitud del péndulo afecta al periodo al igual que el peso, también se observó que en ángulos pequeños se mantienen más o menos contantes los datos y en los ángulos grandes también se mantienen contante solo que aumenta el tiempo de oscilación. Entre más pequeño sea la cuerda la precisión en el tiempo de oscilación varia ya que en la prueba uno con la longitud de .5 metros no vario los tiempos de los ángulos pequeños y los ángulos grandes.
+
+	\subsection{Etzael Lara Coronado}
+	Podemos concluir que la masa en un péndulo influye mucho, además de que se determinó su amplitud, viendo como afectaban a las oscilaciones de un péndulo simple, además pudimos observar cómo varían dependiendo del ángulo llevándolo a algo conocido como lo es la ecuación de M.A.S.
+
+
+	\subsection{Martin Eduardo Tolentino Valencia}
+	Con esta práctica observamos los movimientos de los péndulos simples, cuantas oscilaciones hay en un ángulo pequeño y cuantas, en un ángulo mayor, así como su periodo este movimiento se llama movimiento armónico y es un vaivén, estos movimientos varían dependiendo del objeto que se encuentre colgado del péndulo, una masa pesada o una ligera, con esto observamos los diferentes factores que influyen en el movimiento del péndulo y con esta variedad de peso, observamos con influye la gravedad.
+
+	\subsection{Molina Escobar Carlos}
+	Al variar los parámetros que conforman el péndulo, como son la longitud de la cuerda, la masa que sostiene y la amplitud influyen de manera distinta sobre el periodo de las oscilaciones; cuando la longitud de la cuerda aumenta el periodo lo hace proporcionalmente, cuando la masa o la amplitud aumenta se observa que el péndulo no cambia significativamente su periodo, pero si su velocidad. El comportamiento del péndulo es congruente con el  \textit{Movimiento Armónico Simple}.
+
+	
+\section{Bibliografia}
+Alonso, Finn. Física. Addison-Wesley Iberoamericana (1995).\\
+Crawford Jr. Ondas, Berkeley Physics Course. Editorial Reverté. (1977)\\
+Serway. Física. Editorial McGraw-Hill (1992).\\
+
+
+\end{multicols}
+
+\end{document}

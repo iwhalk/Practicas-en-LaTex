@@ -1,0 +1,199 @@
+\documentclass[11pt]{article}
+
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{siunitx}
+
+\title{Circuito R.L.C}
+\author{Molina Escobar Carlos\\Benitez Alanis Rodrigo Moctezuma\\Ortiz Benhumea Jose Rogelio\\Jose Alexis Garcia Acundo}
+\date{}
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/Ondas_RLC/} }
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+En este ensayo se demuestran diferentes tipos de movimientos armonicos en un circuito R.L.C.
+\end{abstract}
+
+
+\begin{multicols}{2}
+
+\section{CONSIDERACIONES TEÓRICAS.}
+	\subsection{Resistencia.}
+		Son los únicos elementos pasivos para los cuales la respuesta es la misma tanto para C. A. como para C.C. 
+		Se dice que en una resistencia la tensión y la corriente están en fase.
+		La resistencia es el valor de oposición al paso de la corriente (sea continua o alterna) de la resistencia.
+	\subsection{Capacitor.}
+		En C.C. su comportamiento es similar a las resistencias. 
+		En cambio, en C.A. las señales tensión y corriente mantienen la forma de onda, pero desfasadas 90 (la corriente se adelanta $\frac{\pi}{2}$ a la tensión). 
+	\subsection{Inductor.}
+		En C.C. su comportamiento es similar a las resistencias.
+		En cambio, en C.A. las señales tensión y corriente mantienen la forma de onda, pero desfasadas 90 (la corriente se atrasa $\frac{\pi}{2}$ con respecto a la tensión).
+	\subsection{Resistencia, Capacitor e Inductor}
+		La bobina y el condensador causan una oposición al paso de la corriente alterna; además de un desfase, pero idealmente no causa ninguna disipación de potencia, como si lo hace la resistencia.
+		La reactancia es el valor de la oposición al paso de la corriente alterna que tienen los condensadores y las bobinas.
+		Existe la reactancia capacitiva debido a los condensadores y la reactancia inductiva debido a las bobinas.
+		Cuando en un mismo circuito se tienen resistencias, condensadores y bobinas y por ellas circula corriente alterna, la oposición de este conjunto de elementos al paso de la corriente alterna se llama impedancia.
+		El desfase que ofrece una bobina y un condensador son opuestos, y si estos llegaran a ser de la misma magnitud, se cancelarían y la impedancia total del circuito sería igual al valor de la resistencia.
+	\subsection{Circuito R.L.C.}
+
+		circuito $R$, $L$, $C$, $2d_o$ orden con la corriente, i, como la variable independiente:
+
+		$$L \frac{d^2i}{d^2t} + R\frac{di}{dt} + \frac{1}{C} = 0$$
+
+		La Ecuacion resultante es: \\
+
+		$$s^2 + s\frac{R}{L} + 1\frac{1}{LC} = 0$$
+
+		Aa encontrar las raíces de la ecuación característica mediante el uso de la fórmula cuadrática:
+		
+		$$s = \frac{-R\pm \sqrt{R^2-\frac{4L}{C}} }{2L}$$
+
+		Al sustituir las variables $\alpha$ y $\omega _0$ podemos escribir $s$ de manera un poco más sencilla como:
+
+		$$s = - \alpha \pm \sqrt{\alpha^2 - \omega _0}$$
+
+		Donde:
+
+		$$\alpha = \frac{R}{2L} ; \omega _0 = \frac{1}{\sqrt{LC}}$$
+
+		$\alpha$ se llama el factor de amortiguamiento y $\omega _0$ es la frecuencia de resonancia.
+		El circuito R.C.L. es el equivalente electrónico de un péndulo con fricción. El circuito se puede modelar con esta ecuación diferencial lineal de $2d_o$. orden:
+
+		$$L \frac{d^2i}{d^2t} + R\frac{di}{dt} + \frac{1}{C} = 0$$
+
+		Las raíces de la ecuación característica pueden tomar formas tanto reales como complejas, dependiendo del tamaño relativo de $\alpha$ y $\omega _0$ .
+
+
+		\begin{itemize}
+			\item Sobre amortiguado: $\alpha > \omega _0$; conduce a la suma de dos exponenciales decrecientes.
+			\item Críticamente amortiguado:  $\alpha = \omega _0$; conduce a “t” exponencial decreciente.
+			\item Sub amortiguado:  $\alpha < \omega _0$; conduce a un seno decreciente.
+		\end{itemize}
+
+	\subsection{Movimiento Armónico Amortiguado (MAA).}
+
+		Todos los osciladores reales están sometidos a alguna fricción. Las fuerzas de fricción son disipativas y el trabajo que realizan es transformado en calor que es disipado fuera del sistema. Como consecuencia, el movimiento está amortiguado, salvo que alguna fuerza externa lo mantenga. 
+		Cuando el amortiguamiento no supera este valor crítico el sistema realiza un movimiento ligeramente amortiguado, semejante al movimiento armónico simple, pero con una amplitud que disminuye exponencialmente con el tiempo.
+		La característica esencial de la oscilación amortiguada es que la amplitud de la oscilación disminuye exponencialmente con el tiempo. Por tanto, la energía del oscilador también disminuye.
+		Dicho esto, escribimos explícitamente la forma de la fuerza en este contexto: 
+
+		$$F = -kx - bx$$
+
+		Por tanto, la ley de Newton aplicada a un punto de masa m unido a un muelle de elasticidad $k$ será sobre el eje $x$:
+
+		$$-kx-bx' = mx'  $$
+
+		Esta ecuación diferencial tiene como solución:
+
+		$$x=Ae^{-\frac{b}{2m}}\cos{\left((\sqrt{\frac{k}{m}-\frac{b^2}{4m^2}})t+\emptyset\right)}$$
+
+		$$x=Ae^{-\frac{b}{2m}}\cos{(\omega_0t+\emptyset)}$$
+
+	\subsection{Movimiento Armónico Forzado.}
+
+		La amplitud de una oscilación amortiguada decrece con el tiempo. Al cabo de un cierto tiempo teóricamente infinito, el oscilador se detiene en el origen. Para mantener la oscilación es necesario aplicar una fuerza oscilante.
+		El oscilador forzado, o su equivalente el circuito R.L.C. conectado a una fuente de corriente alterna es un ejemplo que nos permite estudiar con detalle las soluciones de una ecuación diferencial de segundo orden. Nos permite diferenciar entre estado transitorio y estacionario. Comprender el importante fenómeno de la resonancia. 
+		Las fuerzas que actúan sobre la partícula son:
+
+		\begin{itemize}
+
+			\item La fuerza que ejerce el muelle, $-kx$
+			\item La fuerza de rozamiento proporcional a la velocidad $bv$ y de sentido contrario a ésta
+			\item La fuerza oscilante $F_0\cdot\cos(\omega _ft)$ de frecuencia angular $\omega _f$
+
+		\end{itemize}
+
+		La ecuación del movimiento de la partícula es:
+
+		$$ma = -kx-bv+F \cdot \cos(\omega _ft)$$
+
+		Expresamos la ecuación del movimiento en forma de ecuación diferencial que describe las oscilaciones forzadas:
+
+		$$\frac{d^2x}{d^2t}+2b\frac{dx}{dt}+w_0x=\frac{F_0}{m}\cos{\left(w_ft\right);\ \ w_0=\ \sqrt{\frac{k}{m}}};\ \ 2b=\ \frac{\lambda}{m}$$
+
+		\begin{itemize}
+
+			\item Donde $\omega _f$ es la frecuencia natural o propia del oscilador.
+			\item $\omega _f$ es la frecuencia angular de la fuerza oscilante de amplitud $F$
+			\item $b$ es la constante de amortiguamiento, $b < \omega _0$
+
+		\end{itemize}
+
+		La solución general de la ecuación diferencial completa es la suma de la solución general de la homogénea más la solución particular $x = x1 + x2$.
+
+		$$x=(Ccos(\omega\ t)+Dsin(\omega\ t))e(-bt)+Acos(\omega\ ft)+Bsin(\omega\ ft)$$
+
+		\begin{itemize}
+
+			\item Cuando $\omega _0 \not= \omega _f$ Obtenemos pulsaciones, suma de armónicos de dos frecuencias distintas.
+			\item Cuando $\omega _0 = \omega _f$: La amplitud crece linealmente sin límite.
+			\item Cuando $\omega _0 \not= \omega _f$: Al cabo de un cierto tiempo (teóricamente infinito) el estado transitorio desaparece y la amplitud de la oscilación forzada tiende hacia un valor constante.
+			\item Cuando $\omega _0 = \omega _f$: La amplitud de la oscilación crece y tiende hacia un valor límite constante.
+
+		\end{itemize}
+
+
+
+
+
+
+\section{Circuito R.L.C}
+
+	\subsection{Esquematico del circuito}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=1\textwidth]{RLC_1}
+		    \captionof{figure}{Circuito R.L.C}
+		    \label{fig:mesh1}
+		\end{Figuras}
+
+		LA fiigura \ref{fig:mesh1} muestra un circuito R.L.C. sensillo, dondé, se ubican facilmente el inductor, capacito y resistencia.
+
+	\subsection{Simulación del circuito}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=1\textwidth]{RLC_2}
+		    \captionof{figure}{Los colores de las curvas coinciden con las puntas de corriente del circuito}
+		    \label{fig:mesh1}
+		\end{Figuras}
+
+		Aqui se pueden ver la diferencia de potencial de los diferentes circuito conforme avanza el tiempo, cada elemento tiene su curva caracteristica.
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=1\textwidth]{RLC_3}
+		    \captionof{figure}{Podemos Observar el Movimiento Armónico Amortiguado de la Onda}
+		    \label{fig:mesh1}
+		\end{Figuras}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=1\textwidth]{RLC_4}
+		    \captionof{figure}{Podemos Observar el Movimiento Armónico Forzado de la Onda}
+		    \label{fig:mesh1}
+		\end{Figuras}
+
+
+	
+
+
+
+\end{multicols}
+
+\end{document}

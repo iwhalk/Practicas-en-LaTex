@@ -1,0 +1,362 @@
+\documentclass[11pt]{article}
+
+
+\title{Ley de Ohm}
+\author{2CV5\\Equipo 4\\\\Molina Escobar Carlos\\Victoria Zúñiga Mario Alberto\\Parada Velazquez Kevin Osvaldo\\Santana Martínez Jesús Gerardo\\Tovar Urrea Roberto Fausto}
+\date{}
+
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{booktabs,chemformula}
+\usepackage{verbatim}
+\usepackage{relsize}
+\usepackage[document]{ragged2e}
+\usepackage{amssymb}
+\usepackage{booktabs,chemformula}
+
+
+\makeindex
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/EyM_imagenes_5/} }
+
+
+\begin{document}
+	
+\maketitle
+
+\begin{abstract}
+
+	El objetivo de estas experiencias es verificar la relación entre la caída de potencial y la intensidad de la corriente en una resistencia; y la relación entre la resistencia eléctrica de un conductor y su geometría. Para ello armamos un circuito con una fuente de tensión variable y medimos la caída de voltaje y la intensidad de la corriente. Pronto medimos la resistencia de conductores de diferente longitud y sección para encontrar una relación entre estos parámetros.
+
+\end{abstract}
+
+
+\begin{multicols}{2}
+
+\section{Objetivo}
+	Al realizar esta práctica se conseguirá:
+	\begin{itemize}
+	
+		\item Verificar que la corriente de un resistor óhmico es directamente proporcional a la diferencia de potencia entre sus bornes, dentro de los limites de precisión del experimento.
+		\item Establecer la relación matemática entre la resistencia de un resistor óhmico y la corriente que lo atraviesa cuando el voltaje permanece constante.
+		\item Verificar el comportamiento el circuito al variar la resistencia y el voltaje para mantener la corriente constante.
+		
+
+	\end{itemize}
+
+
+\section{Introducción}
+	
+		Un campo eléctrico tiende a hacer que un electrón se mueva y por lo tanto cause una corriente eléctrica. El que produzca o no una corriente depende de la naturaleza física del medio dentro del cual actúa el campo.
+		Un electro libre e en un alambre conductor, es acelerado por el campo eléctrico hasta que pierde velocidad como resultado de colisiones o interactuar con las partes estacionarias de los átomos constituyentes del conductor. 
+		Después de cada colisión el electrón comienza  del reposo nuevamente.
+		El electrón se acelera una vez mas hasta que el resultado neto es una velocidad promedio ($v$). Esta velocidad se incrementa lineal-mente para un campo aplicado ($E$) entonces:
+
+		\begin{eqnarray}
+			v &=& \mu E \label{eq:1}
+		\end{eqnarray}
+		
+		Donde $u$ es la movilidad del electrón. La movilidad es una propiedad del material, sera grande para materiales que son bunos conductores y pequeña para materiales que son malos conductores.
+		Sea n el numero de electrones libres por metro cubico y $J$ la densidad de corriente definida como:
+
+		\begin{eqnarray}
+			J&=& n e v \label{eq:2}
+		\end{eqnarray}
+		
+		Entonces sustituyendo el valor de $v$ la ecuación \ref{eq:2} se tiene 
+		
+		\begin{eqnarray}
+			J &=& n e \mu E \label{eq:3}
+		\end{eqnarray} 
+
+		A relación de la densidad de corriente entre el campo eléctrico, que depende solo del material del conductor se le llama conductividad ($\sigma$)
+		
+		\begin{eqnarray}
+			\frac{J}{E}&=& \sigma \label{eq:4}
+		\end{eqnarray}
+
+		La relación $\displaystyle\frac{J}{E}$, es una forma de la Ley de Ohm en honor del científico alemán George Simon Ohm quien fue el primero que la descubrió experimentalmente. 
+		Un concepto adicional es el de la resistividad ($p$). cantidad que se usa muy frecuentemente y es definida como el inverso de la conductividad así:
+		
+		\begin{eqnarray}
+			P &=& \frac{1}{\sigma} \label{eq:5}
+		\end{eqnarray}
+
+		Si se considera un conductor largo $L$ en metros que tiene una sección transversal A dada en metros cuadrados y que lleva una corriente la en amperes.
+		La magnitud del campo eléctrico $E$ en termino de la diferencia de potencial $V$ entre las terminales del conductor es:
+
+		\begin{eqnarray}
+			E &=& \frac{V}{L} \label{eq:6}
+		\end{eqnarray}
+
+		Substituyendo este valor en la ecuación \ref{eq:4} resulta:
+		
+		\begin{eqnarray}
+			J&=& \mathlarger{\sigma} \frac{V}{L} \label{eq:7}
+		\end{eqnarray}
+
+		Al definir la densidad de corriente como
+		$\sigma$
+		\begin{eqnarray}
+			J &=& \frac{I}{A} \label{eq:8}
+		\end{eqnarray}
+
+		entonces:
+
+		\begin{eqnarray}
+			\frac{I}{A} &=& \mathlarger{\sigma} \frac{V}{L} \label{eq:9}
+		\end{eqnarray}
+
+		Después de acomodar e introducir el termino resistividad ($p$) en la ecuación \ref{eq:9}, se tiene:
+		
+		\begin{eqnarray}
+			V &=& \frac{pLI}{A} \label{eq:10}
+		\end{eqnarray}
+
+		donde la cantidad:
+
+		\begin{eqnarray}
+			\frac{PL}{A} &=& R \label{eq:11}
+		\end{eqnarray}
+
+		es conocida como la resistencia $R$ del conductor.
+		De acuerdo a esta relación la resistencia del conductor depende solo del material del mismo a través de sus resistividad sino también de su longitud y del área transversal.
+		Esto es un conductor largo y delgado tendrá mayor resistencia que un conductor corto y grueso del mismo material. La unidad de resistencia se llama OHM ($\Omega$).
+		el inverso de la resistencia es la conductancia que se mide en unidades reciprocas de ohm, llamada a menudo MHOS ($\mho$). Finalmente la ecuación de la Ley de Ohm se escribe:
+		
+		\begin{eqnarray}
+			V &=& \frac{I}{R} \label{eq:12}
+		\end{eqnarray}
+
+		La ecuación fue determinada y demostrada en 1827 por el físico alemán George Ohm (1787 - 1894) y le siguen muchos conductores en un amplio intervalo de valores de $V$ y de $I$ en el caso de los conductores óhmicos ó conductores de comportamiento lineal.
+
+\section{Material y Equipo}
+
+	\begin{itemize}
+		\item Multímetro digital
+		\item Selector bipolar
+		\item Fuente Universal
+		\item Amperímetro 
+		\item 6 cables de conexión
+		\item Década de resistencias 
+	\end{itemize}
+
+\section{Desarrollo}
+
+	\begin{Figuras}
+		\centering
+	    \includegraphics[width=0.9\textwidth]{Ohm_1}
+	    \captionof{figure}{Circuito sencillo}
+	    \label{fig:mesh1}
+	\end{Figuras}
+
+	\subsection{Relación entre voltaje y corriente.}
+
+	Armar el circuito que se muestra en la figura \ref{fig:mesh1} teniendo la precaución de que el selector del medidor este señalando la escala de 3 $mA$ o mayor y que la escala de voltaje de la fuente no marcar más de 15 Volts. Relación entre voltaje y corriente
+	Cuidando que la polaridad del instrumento de medida sea el correcto.
+	Cerrar el interruptor $K$ y con los controles (grueso y fino, si los tiene) de salida del voltaje de la fuente regulada ajuste el voltaje.
+	Ajustar el valor de resistencia a 6800 $\Omega$
+	Cada vez que anote un valor de corriente abra el interruptor y cerrarlo hasta que se haya ajustado el siguiente valor del voltaje.
+	Asigne las incertidumbres correspondientes a las mediciones del voltaje y de la corriente.
+
+	\subsection{Relación entre resistencia y corriente.}
+
+	Seguir con el circuito de la figura \ref{fig:mesh1}
+
+	Encender la fuente regulada y con ayuda de los controles (grueso y fino, si los tiene) ajuste el voltaje de salida aplicado al resistor a un valor de 8 volts. 
+	Realizado lo anterior cerrar el interruptor K mida la intensidad de corriente. Repetir esto para los valores de resistencia indicados en dicha tabla, manteniendo constante el voltaje aplicado. (Abrir el interruptor K antes del cambio de resistencia).
+	Asignar las incertidumbres correspondientes a la medición de corriente y a los valores de la resistencia.
+
+	\subsection{Relación entre voltaje y resistencia.}
+
+	Continuar con el mismo que se muestra en la figura \ref{fig:mesh1} con un valor de resistencia $R = 2000$
+	Encender la fuente regulada y con ayuda de los controles (grueso y fino, si los tiene) del voltaje de salida ajuste éste para que marque cero.
+	Ahora cerrar el interruptor K y lentamente con ayuda de los controles aumente el voltaje aplicado a la resistencia hasta que en el Amperímetro se obtenga una lectura de $2 mA$.
+	(Abrir el interruptor K, incrementar el valor de la resistencia según lo indicado en la tabla, repita la operación anterior. Repetir lo anterior para los restantes valores de resistencia.
+	Terminado el experimento abrir el interruptor K y desconectar la fuente regulada.
+	Asignar las incertidumbres correspondientes a la medición del voltaje y a los valores de la resistencia.
+
+
+
+\section{Resultados}
+	
+	\subsection{Relación entre voltaje y corriente.}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=0.9\textwidth]{Ohm_2}
+		    \captionof{figure}{Primera medición para la relación entre voltaje y corriente.}
+		    \label{fig:mesh2}
+		\end{Figuras}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=0.9\textwidth]{Ohm_3}
+		    \captionof{figure}{Ultima medición para la relación entre voltaje y corriente.}
+		    \label{fig:mesh3}
+		\end{Figuras}
+
+		  \begin{tabular}{@{}cccccccccc@{}}
+		    \toprule
+
+				Volts&	0&		2&		4&		6&		8&	10&		12&		14&		15\\
+				\midrule
+				I(mA)&	0&	0.40&	0.60&	0.90&	1.25&	1.52&	1.80&	2.03&	2.18\\
+		    \bottomrule
+		  \end{tabular}
+
+\pagebreak
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=1.1\textwidth]{Ohm_4}
+		    \captionof{figure}{Gráfica de Voltaje contra Intensidad.}
+		    \label{fig:mesh4}
+		\end{Figuras}
+ 
+		Como se puede observar, existe una relación directa; cuando aumenta la tensión aumenta la corriente.
+
+	\subsection{Relación entre resistencia y corriente.}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=0.9\textwidth]{Ohm_5}
+		    \captionof{figure}{Primera medición para la relación entre resistencia y corriente.}
+		    \label{fig:mesh5}
+		\end{Figuras}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=0.9\textwidth]{Ohm_6}
+		    \captionof{figure}{Ultima medición para la relación entre resistencia y corriente.}
+		    \label{fig:mesh6}
+		\end{Figuras}
+
+		  \begin{tabular}{@{}ccccccccc@{}}
+		    \toprule
+
+		    R(KΩ)&		3&		4&		5&		6&		7&		8&		9&	10\\
+		    \midrule
+		    I(mA)&	2.79&	2.10&	1.68&	1.40&	1.20&	1.05&	0.93&	0.83\\
+
+		    \bottomrule
+		  \end{tabular}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=1.1\textwidth]{Ohm_7}
+		    \captionof{figure}{Gráfica de Resistencia contra Intensidad.}
+		    \label{fig:mesh7}
+		\end{Figuras}
+
+		La relación entre la resistencia y la corriente es inversa, es decir, entre mas resistencia menos corriente.\newpage
+
+	\subsection{Relación entre voltaje y resistencia.}
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=0.9\textwidth]{Ohm_8}
+		    \captionof{figure}{Para estas mediciones mantuvimos constante la medición de corriente en el Multímetro (2mA), aumentando la tensión en la fuente, mientras aumentamos la resistencia.}
+		    \label{fig:mesh8}
+		\end{Figuras}
+
+
+		  \begin{tabular}{@{}cccccccc@{}}
+		    \toprule
+
+		    R(KΩ)&	2&	3&	4&	5&	6&	7&	8\\
+		    \midrule
+		    Volts&	4&	6&	7.9&	9.9&	12&	14&	16\\
+
+		    \bottomrule
+		  \end{tabular}
+
+
+		\begin{Figuras}
+			\centering
+		    \includegraphics[width=1.1\textwidth]{Ohm_9}
+		    \captionof{figure}{Gráfica de Resistencia contra Voltaje.}
+		    \label{fig:mesh9}
+		\end{Figuras}
+
+		Aquí se contempla una relación directamente proporcional entre la resistencia y la tensión.
+
+
+\section{Cuestionario}
+	\begin{itemize}
+
+		\item	Defina los siguientes conceptos:
+			\begin{itemize}
+				\item Resistividad eléctrica\\
+				La resistividad es la resistencia eléctrica específica de un determinado material.
+				\item Conductividad eléctrica\\
+				La conductividad eléctrica es la medida de la capacidad de un material o sustancia para dejar pasar la corriente eléctrica a través de él.
+				\item Conductancia\\
+				Se denomina conductancia eléctrica a la facilidad que ofrece un material al paso de la corriente eléctrica, es decir, que la conductancia es la propiedad inversa de la resistencia eléctrica. 
+			\end{itemize}
+
+		\item ¿Cómo varia la resistencia de un conductor con respecto a su temperatura?\\
+		En la mayoría de los metales aumenta su resistencia al aumentar la temperatura, por 
+		el contrario, en otros elementos, como el carbono o el germanio la resistencia 
+		disminuye. 
+		En algunos materiales la resistencia llega a desaparecer 
+		cuando la temperatura baja lo suficiente. En este caso se habla de superconductores. 
+		\item ¿Qué tipo de gráfica representa la variación de resistencia con respecto a la temperatura en termistor?\\
+
+		El comportamiento del termistor contra la temperatura observa una disminución de la resistencia al aumentar está su fundamento esta en la dependencia de la resistencia de los semiconductores ya que los termistores están fabricados a partir de semiconductores con la temperatura debida a la variación del numero de portadores reduciéndose la resistencia.
+
+		\item ¿Que es un resistor?\\
+		Se denomina resistencia o resistor al componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico.
+
+		\item ¿Cómo afecta el valor de la resistencia al efecto SKIN?
+		¿Cuándo se presenta el efecto skin (pelicular) en un conductor?\\
+
+		Este fenómeno hace que la resistencia efectiva o de corriente alterna sea mayor que 
+		la resistencia óhmica-arochiana o de corriente elevada. Este efecto es el causante de 
+		la variación de la resistencia eléctrica, en corriente alterna, de un conductor debido a 
+		la variación de la frecuencia de la corriente eléctrica que circula por éste. 
+
+		\item ¿Qué importancia tiene el usar una fuente regulada de C.C. en la demostración de la Ley de Ohm?\\
+
+		Que puedes hacer cambios de variación en voltaje o amperaje para un mayor control 
+		de un circuito y que la onda es continua y no hay esos cambios de onda que te da la 
+		alterna.
+
+	\end{itemize}
+
+\section{Conclusiones}
+
+		\subsection{Molina Escobar Carlos}
+
+			Los resultados de esta practica fueron predichos por la ley de Ohm. Simplemente con ver la ecuación \ref{eq:12} podemos ver claramente las relaciones entre la resistencia, corriente y tensión; se puede ver que los valores de las gráficas de las mediciones realizadas son coherentes con esta Ley.
+
+		\subsection{Santana Martínez Jesús Gerardo}
+
+			En la practica pude comprender que un circuito depende de cálculos importantes los cuales nos ayudan a conocer los distintos voltajes, corrientes llamándolos por así decirlos necesidades que se necesitan para poder tener una medición correcta o también decir que podremos tener un mejor uso de los aparatos electrónicos con la practica comprendí que  la ley de Ohm nos ayuda a calcular parámetros importantes los cuales son Voltaje, Corriente y la Resistencia.
+
+		\subsection{Kevin Osvaldo Parada Velazquez}
+			Con ayuda del multímetro logramos probar la fórmula de la Ley de OHM, que dice: corriente es igual a Voltaje sobre Resistencia, y pusimos diferentes resistencias con diferentes voltajes para hacer mediciones, y se comprobó que la operación es correcta, con lo que mostraba el multímetro, eso nos ayuda para generar una constante y saber el valor de una resistencia con el voltaje y la corriente obtenidas.
+
+		\subsection{Victoria Zúñiga Mario Alberto}
+
+			 Lo que pude comprender de esta practica  es experimentar y observar el comportamiento de las resistencias y poderlas asociar con sus formas matemáticas así como entender su comportamiento tanto como en resistencias y  que  mantengan su corriente constante. 
+
+		\subsection{Tovar Urrea Roberto Fausto}
+
+			Se observo que la corriente en un resistor óhmico es proporcional a la diferencia de potencial entre sus bornes, en esta practica aprendimos que es la resistencia eléctrica y su relación con la corriente y el voltaje y pudimos observar el comportamiento del circuito al variar la resistencia y voltaje.												
+
+\section{Bibliografía}
+
+\textit{Manual de prácticas electricidad y magnetismo, Revisión 2019, Instituto Politécnico Nacional Escuela Superior de Ingeniería Mecánica y Eléctrica, Departamento de Ingeniería de Comunicaciones y Electrónica}\\
+\textit{Serway, Raymond A. y John W. Jewett, Jr. Electricidad y magnetismo. Novena edición. ISBN: 978-607-522-490-9.}
+
+\end{multicols}
+
+\end{document}

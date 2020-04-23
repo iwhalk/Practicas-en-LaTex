@@ -1,0 +1,225 @@
+\documentclass[11pt,a4paper]{article}
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{fourier}
+%\usepackage{kpfonts}
+\usepackage{caption}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{tocloft}
+\usepackage{booktabs}
+\usepackage{booktabs,chemformula}
+\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+
+\author{Martin Eduardo Tolentino Valencia }
+\title{Movimiento Armonico Simple}
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/Ondas/} }
+
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}La ley de Hooke es sumamente útil en todos aquellos campos en los que se requiere del conocimiento pleno de la capacidad elástica de los materiales. Robert Hooke, estudió, entre otras cosas, el resorte. Su ley permite asociar una constante (k) a cada resorte. Es el principio físico en torno a la conducta elástica de los sólidos, es decir, que a mayor fuerza, mayor deformación o desplazamiento, o como lo formuló en latín el propio Hooke: Ut tensio sic vis (“como la extensión, así la fuerza”).\\La elasticidad es la propiedad de un material que le hace recuperar su tamaño y forma original después de ser comprimido o estirado por una fuerza externa. Si las moléculas están firmemente unidas entre sí, la deformación no será muy grande incluso con un esfuerzo elevado. En cambio, si las moléculas están poco unidas, una tensión relativamente pequeña causará una deformación grande. Por debajo del límite de elasticidad, cuando se deja de aplicar la fuerza, las moléculas vuelven a su posición de equilibrio y el material elástico recupera su forma original. La relación entre el esfuerzo y la deformación, se denomina módulo de elasticidad, determinados por la estructura molecular del material.\\Los conceptos claves del movimiento armónico simple son:\\Oscilación: Oscilación, en física, química e ingeniería, movimiento repetido de un lado a otro en torno a una posición central, o posición de equilibrio.\\ Frecuencia: La frecuencia f, es el número de oscilaciones por segundo.\\
+ Amplitud: La amplitud del movimiento, denotada con $A$, es la magnitud máxima del desplazamiento respecto al equilibrio; es decir, el valor máximo de |x| y siempre es positiva.\\ 
+ Fuerza de restitución: Siempre que el cuerpo se desplaza respecto a su posición de equilibrio, la fuerza de resorte, tiende a regresarlo a esa posición. Llamamos a una fuerza con esta característica fuerza de restitución.\\
+ Constante Elástica: Una constante elástica es cada uno de los parámetros físicamente medibles que caracterizan el comportamiento elástico de un sólido deformable elástico-lineal.\end{abstract}
+
+\begin{multicols}{2} 
+\textbf{Objetivo}  \\
+Contrastar y ver de manera física el fenómeno estudiado en clase del movimiento armónico simple en conjunto con la ley de Hooke, dando un ángulo más claro del modelo matemático presentado y, resumido por medio de formula y ecuaciones; trasladándola a su razón experimental y conceptualizando dichas afirmaciones a raíz del modelo practico.\\
+\textbf{Teoría}\\
+ Muchos tipos de movimiento se repiten una y otra vez: la vibración de un cristal de cuarzo en un reloj de pulso, el péndulo oscilante de un reloj con pedestal, las vibraciones sonoras producidas por un clarinete o un tubo de órgano y el movimiento periódico de los pistones de un motor de combustión. A esta clase de movimiento le llamamos movimiento periódico u oscilación.\\
+Un cuerpo que experimenta un movimiento periódico se caracteriza por una posición de equilibrio estable; cuando se le aleja de esa posición y se libera, entra en acción una fuerza o torca para hacerlo regresar al equilibrio. Sin embargo, para cuando llega ahí, ya ha adquirido cierta energía cinética que le permite continuar su movimiento hasta detenerse del otro lado, de donde será impulsado nuevamente hacia su posición de equilibrio.\\
+Descripción de la oscilación
+Un cuerpo de masa m se mantiene sobre una guía horizontal sin fricción, como una pista o un riel de aire, de modo que sólo puede desplazarse a lo largo del eje x. El cuerpo está conectado a un resorte de masa despreciable que puede estirarse o comprimirse. La fuerza del resorte es la única fuerza horizontal que actúa sobre el cuerpo; en este caso, las fuerzas normales verticales y gravitacionales suman cero.\\
+Amplitud, periodo, frecuencia lineal y frecuencia angular
+La amplitud del movimiento, denotada con Am es la magnitud máxima del desplazamiento con respecto al equilibrio, es decir, el valor máximo de lxl y siempre es positiva. Si el resorte es ideal, el rango global del movimiento es 2A. La unidad de A en el SI (Sistema Internacional) es el metro. Una vibración completa, o ciclo, es un viaje redondo, digamos de A a -A y de regreso a A. Observe que el movimiento de un lado al otro es medio ciclo, no un ciclo completo.\\
+El periodo, T, es el tiempo que tarda un ciclo, y siempre es positivo. La unidad del tiempo en el sistema internacional es el segundo, aunque a veces se expresa como "segundos por ciclo".
+La frecuencia lineal o simplemente, frecuencia, f, es el número de ciclos en la unidad de tiempo, y siempre es positiva. La unidad de la frecuencia es el hertz en honor del físico alemán Heinrich Hertz.
+1 hertz = 1 Hz = 1 ciclo/s. \\
+La frecuencia angular, $w$, es $2 \pi$  veces, la frecuencia lineal.\\
+
+\textbf{Movimiento Armónico Simple}\\
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{A_1}
+    \captionof{figure}{}
+    \label{fig:mesh1}
+\end{Figuras}
+
+Definiciones:\\ 
+Un movimiento se llama periódico cuando a intervalos regulares de tiempo se repiten los valores de las magnitudes que lo caracterizan. Un movimiento periódico es oscilatorio si la trayectoria se recorre en ambas direcciones. Un movimiento oscilatorio es vibratorio si su trayectoria es rectilínea y su origen se encuentra en el centro de la misma.\\El movimiento ARMÓNICO es un movimiento vibratorio en el que la posición, velocidad y aceleración se pueden describir mediante funciones senoidales o cosenoidales. De todos los movimientos armónicos, el más sencillo es el Movimiento Armónico Simple, que es al que nos referiremos de aquí en adelante. \\El MOVIMIENTO ARMÓNICO SIMPLE es aquel en el que la posición del cuerpo viene dada por una función del tipo:\begin{center}
+$f=A\cdot sen(\omega \cdot t + \varphi) $\end{center}Magnitudes fundamentales:\\Elongación (y): es la distancia del móvil al origen (O) del movimiento en cada instante.\\Amplitud (A): es la elongación máxima que se alcanza.\\Periodo (T): tiempo en que tarda en realizarse una vibración completa.\\Frecuencia (f): número de vibraciones completas realizadas en la unidad de 
+tiempo...Es la inversa del período:\begin{center}
+$f=\frac{1}{T}$
+\end{center}
+Pulsación o frecuencia angular ($\omega$):
+\begin{center}
+$\omega=2\pi f=\frac{2\pi}{T}$
+\end{center}
+Desfase, fase inicial o corrección de fase ($\varphi$): su valor determina la posición del cuerpo en el instante inicial. \\\\
+Representación del M.A.S.\\
+
+Para simplificar en un principio, se supone el caso particular en el que no hay desfase, es decir $phi=0$. En este caso la ecuación del movimiento toma la forma: 
+$y= A \cdot sen (\varphi \cdot t)$\\
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{A_2}
+    \captionof{figure}{}
+    \label{fig:mesh2}
+\end{Figuras}
+
+En la figura \ref{fig:mesh2} puedes ver representado un cuerpo que describe un M.A.S. en el caso más sencillo en el que no existe desfase.\\A.1: Modifica el valor de la amplitud con el pulsador A y fíjate en el resultado. Utiliza los pulsadores del zoom si es necesario para ver la escena completa.\\A.2: Modifica el valor del período con el pulsador T y observa en qué cambia el movimiento. Observa la variación en los valores de la frecuencia y la pulsación que aparecen en pantalla a medida que cambia el periodo.\\La posición en el M.A.S.\\Como ya se ha dicho, la posición de un cuerpo que describe un M.A.S. viene dada por una ecuación de tipo senoidad:\\
+
+$$a=A \omega \sen{(\omega t + \phi )}$$
+
+El caso más sencillo se produce cuando no existe desfase $(\varphi=0)$. En este caso la ecuación queda reducida a: 
+
+$$a=A \omega \sen{(\omega t )}$$
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{A_3}
+    \captionof{figure}{}
+    \label{fig:mesh3}
+\end{Figuras}
+
+La velocidad en el M.A.S. 
+
+La velocidad v de un móvil que describe un M.A.S. se obtiene derivando la posición respecto al tiempo:
+
+$$v=\frac{dy}{dt}=A \omega \cos{(\omega t + \phi )}$$
+
+ Si nos ceñimos de nuevo al caso más simple, en el que el desfase $\varphi= 0$ , la ecuación se simplifica:
+
+$$a=A \omega \cos{(\omega t)}$$
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{A_4}
+    \captionof{figure}{}
+    \label{fig:mesh4}
+\end{Figuras}
+
+
+
+
+La aceleración en el M.A.S 
+Al ser el M.A.S. un movimiento rectilíneo no posee aceleración normal. Así, la aceleración total coincide con la aceleración tangencial y, por tanto, puede obtenerse derivando el módulo de la velocidad: \\
+
+$$a=\frac{dv}{dt}=-A \omega^2 \sen{(\omega t + \phi )}$$
+
+En el caso más simple, el desfase es nulo $(\varphi = 0)$ y la ecuación toma la forma: \\En la siguiente página se puede observar la gráfica aceleración-tiempo de un M.A.S.\\
+
+$$a=-A \omega ^2\sen{(\omega t)}$$\\
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{A_5}
+    \captionof{figure}{}
+    \label{fig:mesh5}
+\end{Figuras}
+
+\textbf{{\normalsize Desarrollo experimental}}\\
+\textbf{{\normalsize Material}}
+\begin{itemize}
+\item Resorte helicoidal
+\item Balanza de Jolly
+\item Celular(cronómetro)
+\item Dinamómetro de 1N
+\item Pesas de 50g a 200g \\
+\end{itemize}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{D_1}
+    \captionof{figure}{}
+    \label{fig:mesh6}
+\end{Figuras}
+
+En el primer experimento realizamos la medición del resorte en el punto de equilibrio posteriormente dependiendo la masa que se tenía que colocar en el resorte, llegamos a poner desde una pesa hasta tres pesas para poder tener la masa solicitada y anotábamos el desplazamiento hasta donde llegó el resorte y hacíamos la diferencia entre el desplazamiento del resorte y la medida del resorte y posteriormente colocábamos las pesas en el dinamómetro para obtener su peso.
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{D_2}
+   
+    \label{fig:mesh88}
+\end{Figuras}
+
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{D_4}
+ \captionof{figure}{}
+    \label{fig:mesh7}
+\end{Figuras}
+
+
+Para el segundo experimento colocamos diferentes pesas dependiendo lo que se pedía y estirábamos el resorte jalando desde la pesa y en un punto soltábamos la pesa y con el temporizador tomamos el tiempo en el que el resorte llegaba veinte veces al mismo punto donde lo habíamos soltado, después de esto colocamos el resorte con las pesas en el dinamómetro.\\
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{D_6}
+ \captionof{figure}{Teóricamente los puntos que resultan debería estar sobre una recta de pendiente k según predice la ley de Hooke, calculando la pendiente no da la constante k siempre y cuando la gráfica sea una recta }
+    \label{fig:mesh8}
+\end{Figuras}
+
+En el experimento tres se hizo un procedimiento parecido al experimento dos solo que esta vez solo se hizo con una pesa y viendo el desplazamiento del resorte también anotamos la incertidumbre  que podría tener nuestros instrumentos de medición, que más menos la unidad mínima para medir de cada uno estos aparatos.\\
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{D_3}
+    \label{fig:mesh89}
+\end{Figuras}
+
+\begin{Figuras}
+	\centering
+    \includegraphics[width=0.9\textwidth]{D_7}
+ \captionof{figure}{}
+    \label{fig:mesh9}
+\end{Figuras}
+
+
+
+\textbf{{\normalsize Conclusiones}}\\
+\textbf{Lara Coronado Etzael}:\\En este experimento logramos observar la relación que existe entre la fuerza que se la aplica a un resorte, además de que se puede observar un poco más claro la deformación que sufre el sistema al ser alterado agregándole  más peso cada vez más midiendo desde el punto de equilibrio es decir x=0, además de que pudimos observar  que el cuadrado del periodo (T) de un cuerpo suspendidos a un resorte es directamente proporcional  la masa, esto se pudo ver a través de los cálculos realizados, además de observar como las oscilaciones se hacía cada vez más lento por el mismo peso. \\
+\textbf{Jose Rogelio  Ortiz Benhumea}:\\En esta practica hubo varios factores como la gravedad, la fuerza y el peso. Al estar observando el movimiento del resorte con diferentes pesos esto hace que varie el numero de oscilaciones que el resorte pueda tener. Cuando hay poco peso el resorte tendia mas oscilaciones en cierto tiempo. Con ayuda del dinamometro se observo la fuerza con la que el peso estiraba el resorte y se pudo apreciar el comportamiento del resorte. Basado en la Ley de Hooke es: que, si un resorte se encuentra de forma vertical y este sostenido firmemente en la parte superior y mantiene un peso en la parte inferior del resorte, este se estirara y su alargamiento estara en proporcion con el peso que se suspenda. En esta practica logramos observar que esta ley es proporcional, cuando se varıa el peso, este podrıa aumentar o disminuir el tiempo de oscilacion.\\
+\textbf{Conclusión  Diego Manuel Gutiérrez Ruíz}:\\Los datos que se obtuvieron en el laboratorio fueron satisfactorios aunque en el experimento 2  se puede apreciar que hubo un dato  que destaco deformando demasiado la recta eso se lo atribuimos al error humano o al de los instrumentos de medición pero dejando eso a un lado se obtuvieron los resultados que queríamos casi exactos.\\
+
+\textbf{Urban Casillas Cristian Felipe}:\\En los tres experimentos se demostró de manera adecuada el movimiento armónico efectuado por un resorte vertical, aplicando una masa y midiendo los datos, notamos que la mayoría de ellos eran los esperados de acuerdo a la teoría, así mismo, fue clara la relación observada entre el peso, la fuerza y el estiramiento del resorte.\\
+\textbf{Diego Manuel Gutiérrez Ruíz}:\\Los datos que se obtuvieron en el laboratorio fueron satisfactorios aunque en el experimento 2  se puede apreciar que hubo un dato  que destaco deformando demasiado la recta eso se lo atribuimos al error humano o al de los instrumentos de medición pero dejando eso a un lado se obtuvieron los resultados que queríamos casi exactos.\\
+\textbf{Molina Escobar Carlos}\\Se pudo observar en la práctica que los datos o tenido son congruentes con la ley de Hook, esto es, la constante que unifica el alargamiento del resorte con la fuerza que se le aplica(el peso sujeto a la terminal del resorte); al ser una constante pudimos observar un comportamiento casi lineal (error humano) en nuestras mediciones.\\
+\textbf{MARTIN EDUARDO TOLENTINO VALENCIA}:\\En esta práctica logramos observar los diferentes factores que son vistos en clase como el periodo y la relación de masa y tiempo con este mismo ya que al variar el peso podría aumentar o  disminuir el tiempo de oscilación  y la velocidad en la que oscila el resorte siendo este un factor muy importe en la práctica.\\
+\textbf{BENITEZ ALANIS RODRIGO MOCTEZUMA}\\
+El estudio del método físico del modelo matemático me dio un entorno más adecuado de lo que se había planteado en clase, con ello afirmo que la oscilación de un cuerpo anclado a un resorte presenta una oposición al mismo, contrastando de manera visual la fuerza restauradora la cual se manifiesta al querer llevar dicho modulo a su posición de inicial (equilibrio). También es un hecho comprobado que la descripción grafica de la posición atiende a su amplitud máxima y, que esta oscilación, formula a una función senoidal la cual se repite en intervalos de tiempos iguales, dando así un contraste a la frecuencia del movimiento.
+Se destaca el hecho de que hay una posición inicial para calcular la contante elástica (k), cuya razón de ser se sustenta de la fuerza y la distancia del mismo, distancia que no debe ser confundida con la amplitud, ya que una habla de la posición inicial del modulo (sin peso aparente) y otra el desplazamiento que existe al colocar una masa que atente contra su estado neutral o posición inicial.
+En términos generales, dicha ley te permite ver la densidad de los materiales al aplicarle una fuerza constante ó variable, al igual que los momentos de oscilaciones que presenta y su capacidad de oponerse a la deformación del  peso mismo.
+.\\
+\textbf{{\normalsize Bibliografia}}\\
+Alonso, Finn. Física. Addison-Wesley Iberoamericana (1995).\\
+Crawford Jr. Ondas, Berkeley Physics Course. Editorial Reverté. (1977)\\
+Serway. Física. Editorial McGraw-Hill (1992).\\
+
+\end{multicols}
+
+\end{document}
