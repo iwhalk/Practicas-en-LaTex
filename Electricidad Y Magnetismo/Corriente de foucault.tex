@@ -1,0 +1,179 @@
+\documentclass[11pt]{article}
+
+
+\title{Corrientes de Foucault}
+\author{2CV5\\\\Molina Escobar Carlos}
+\date{}
+
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[spanish]{babel}
+\usepackage{booktabs,chemformula}
+\usepackage{verbatim}
+\usepackage{relsize}
+\usepackage[document]{ragged2e}
+\usepackage{amssymb}
+\usepackage{booktabs,chemformula}
+
+
+
+\makeindex
+
+\newenvironment{Figuras}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\graphicspath{ {c:/Users/iwhalk/Documents/LaTex/EyM_imagenes_5/} }
+
+
+\begin{document}
+	
+\maketitle
+
+\begin{abstract}
+
+	Las corrientes parásitas o corrientes de Foucault 
+
+\end{abstract}
+
+
+\begin{multicols}{2}
+
+\section{Objetivo}
+	Con el desarrollo del experimento se podrá visualizar el efecto de las corrientes de Foucault de manera sencilla:
+	
+\section{Introducción teórica}
+	
+	\subsection{Ley de Faraday}
+
+		La ley de Faraday es una relación entre la razón de variación del flujo del campo magnético que atraviesa un circuito conductor y la fem en el circuito que a su vez produce la corriente en él. De acuerdo con la ley de Ampere, la circulación magnética -la integral del campo magnético $\beta$ alrededor de una curva cerrada compuesta por elementos $dl$- es directamente proporcional a la corriente neta $i$ que atraviesa el área encerrada por esa curva:
+
+		\begin{eqnarray}
+			\oint B dl &=& \mu _0 i\label{eq:1}
+		\end{eqnarray}
+
+		Cuando un circuito conductor esta sumergido en un campo magnético estacionario (de tal manera que lo atraviesa un flujo magnético constante), no fluye corriente a través de él. El resultado negativo de este experimento se puede describir así: 
+		
+		\begin{eqnarray}
+			\oint i dl &=& 0 \not = constante \: \times \: \phi _m\label{eq:2}
+		\end{eqnarray}
+
+		Para comprender este resultado negativo es útil escribir esto en una forma matemática lo mas parecida posible a la Ecuación \ref{eq:1}. Para hacerlo, introduzcamos el vector unitario $\hat d I$ de tal forma que podamos escribir integrando $i dl$ como el producto punto $(i \hat d I)*dl$, en analogía con el producto punto $B * dI$ del integrando del primer miembro de la ecuación \ref{eq:1}. Tenemos entonces:
+
+		\begin{eqnarray}
+			\oint (i \hat dl)* dI &=& 0 \not = constante \: \times \: \phi _m\label{eq:3}
+		\end{eqnarray}
+
+		Comparando la ecuación \ref{eq:1} con la desigualdad inmediatamente anterior, se puede observar que el fracaso de la analogía se debe al hecho de que las ecuaciones no son completamente simétricas. El campo magnético, $B$ en la integral de la Ecuación \ref{eq:1} es estático, es decir, estacionario o invariable. La cantidad correspondiente en la desigualdad es la corriente $(i dI)$, escrita en forma vectorial para expresar su dirección local. Pero una corriente significa un flujo de movimiento; no es una cantidad estática. Observándose los términos de los segundos miembros de la ecuación y de la desigualdad, el flujo magnético $\phi _m$ es una cantidad estática.
+
+		El experimento de Faraday sugiere una solución a la falta de simetría entre los segundos miembros de la Ecuación \ref{eq:1} y la desigualdad. Sustituimos la magnitud $\phi _m$ que no produce ningún efecto directo, por la velocidad de cambio del flujo magnético $\frac{d\phi _m}{dt}$ que induce una corriente, como descubrieron la observación aguda y la mente despierta de Faraday. Podemos remediar la falta de simetría entre los primeros miembros de la Ecuación \ref{eq:1} y la desigualdad estudiando cuidadosamente la ley de Ampere. La circulación magnética del primer miembro es el producto escalar entre el campo magnético $B$ y un elemento de longitud $dI$ integrado sobre una curva cerrada. ¿Podemos definir análogamente la circulación eléctrica?
+
+		\begin{eqnarray}
+			\oint \varepsilon *dI \label{eq:4}
+		\end{eqnarray}
+
+		Se induce corriente en el circuito conductor puesto que lo atraviesa un flujo magnético que esta cambiando a una velocidad $\frac{d \phi _m} {dt}$, como resultado de que el campo magnético esta cambiando con velocidad $\frac{d B} {dt}$. Ahora, la corriente existe puesto que hay movimiento de carga eléctrica. La carga eléctrica se mueve puesto que es impulsada por una fuerza $F$. y la fuerza sobre una carga eléctrica $q$ se puede expresar en términos de un campo eléctrico $\epsilon = \frac{F} {q}$. En el caso general no podemos evaluar este campo eléctrico inducido en ningún punto particular del circuito por medio de la ley de Faraday, que solamente expresa la fem total $V=-\frac{d \phi _m} {dt}$ alrededor del circuito. Sin embargo, podemos ingresar el campo eléctrico incluido alrededor del circuito, y hacer la integral igual a la fem inducida $V$:
+		
+		\begin{eqnarray}
+			\oint \varepsilon *dI &=& V \label{eq:5}
+		\end{eqnarray}
+
+		Esta ecuación es semejante a la relación entre un campo eléctrico estático y la diferencia de potencial V asociada con este campo eléctrico, la cual se encuentra evaluando la integral $\int_{si}^{sf}{\varepsilon * d I=-V}$ entre los puntos $si$ y $sf$ de una trayectoria arbitraria $s$. El signo aparece invertido puesto que el sentido de una fem inducida es el mismo que el del movimiento de una carga positiva, mientras que el sentido de una diferencia de potencial aplicada es opuesto al sentido de la fuerza ejercida sobre una carga positiva por el campo eléctrico asociado. Sin embargo, en el caso del campo eléctrico estático la integral alrededor de una curva cerrada siempre da cero.
+		$V=\frac{-d \phi _m}{dt}$. Sustituyendo esto en la Ecuación \ref{eq:5} se obtiene:
+		
+		\begin{eqnarray}
+			\oint \varepsilon *dI &=& -\frac{d\phi _m}{dt} \label{eq:6}
+		\end{eqnarray}
+
+		La ecuación \ref{eq:6} es la ley de Faraday escrita en una forma que hace evidente su simetría con la ley de Ampere (ecuación \ref{eq:1}), (La ley de Ampere incluye el valor constante $\mu  _0$, mientras que la ley de Faraday no tiene tal factor. Esto simplemente es un reflejo de como se ha definido el sistema de unidades.) La simetría de las dos leyes se puede establecer en palabras de la siguiente forma.
+		Ley de Ampere: la circulación magnética evaluada a lo largo de una curva cerrada es igual a (una constante por) la velocidad de flujo de la carga eléctrica a través del área encerrada por una curva.
+		Ley de Faraday: la circulación eléctrica evaluada a lo largo de una curva cerrada es igual a la razón de variación del flujo del campo magnético a través del área encerrada por esa curva, cambiada de signo.
+		La Ecuación 6 se puede escribir en una forma ligeramente diferente que utilizaremos. Recuérdese que el flujo del campo magnético $\phi _m$ que atraviesa un circuito, esta dado por la integral, sobre el área encerrada por el circuito, del producto escalar del campo magnético $beta$ y el vector elemento de superficie $da$ en cuya localización se especifica el valor de $beta$. Esta integral se puede escribir para el caso del circuito que nos interesa, en la forma:
+		
+		\begin{eqnarray}
+			\phi _m &=& \oint B*da\label{eq:7}
+		\end{eqnarray}
+
+
+		Sustituyéndola en la ecuación \ref{eq:6}, tenemos:
+
+		\begin{eqnarray}
+			\oint \varepsilon * dI &=& -\frac{d}{dt}\oint B*da\label{eq:8}
+		\end{eqnarray}
+
+		Supongamos ahora que el circuito y sus elementos de superficie no cambian con el tiempo. Entonces las operaciones de tomar la derivada con respecto al tiempo e integrar sobre el área del circuito se pueden intercambiar, lo que da por resultado:
+
+		\begin{eqnarray}
+			\oint \varepsilon * dI &=& -\oint \frac{\partial B}{\partial t}*da\label{eq:9}
+		\end{eqnarray}
+
+		En esta ecuación, hemos escrito la derivada con respecto al tiempo como una derivada parcial; esto es necesario puesto que el campo magnético $B$ puede ser función tanto de la posición como del tiempo. (No ocurre así con el flujo total $\phi_m$ que atraviesa el circuito dado que su valor es característico del área total encerrada por el circuito). La Ecuación \ref{eq:9} es otra forma de la ley de Faraday, en ella el sentido en que se recorre la curva cerrada especifica la dirección normal que es la de los vectores elemento de superficie $da$. La especificación esta dada por la regla de la mano derecha para los vectores elemento de superficie, establecida al final.
+		Al expresar la ley de Faraday en términos del campo eléctrico inducido en lugar de en términos de la corriente inducida se hace posible eliminar la necesidad de ligarnos a un circuito conductor. Un campo eléctrico puede existir o no una corriente. Como el lector ha visto ya en relación con la ley de Ampere, únicamente en los casos altamente simétricos se puede evaluar el campo en un punto especifico.
+
+
+	\subsection{Ley de Lenz}
+
+
+		En mecánica, el principio de la energía nos permite a menudo sacar conclusiones con respecto a los sistemas mecánicos sin analizarlos en detalle. Usamos aquí el mismo enfoque. La regla para determinar la dirección de la corriente inducida fue propuesta en 1834 por Heinrich Friedrich Lenz (1804-1865) y se conoce como la ley de Lenz:
+		\vspace{5mm}
+
+		\textit{En un circuito conductor cerrado, la corriente inducida aparece en una dirección tal que esta se opone al cambio que produce.}
+
+		\vspace{5mm}
+		
+		El signo menos en la ley de Faraday indica esta oposición. 
+		La ley de Lenz se refiere a corrientes inducidas, lo cual significa que solo se aplica a circuitos conductores cerrados. Si el circuito está abierto, por lo general podríamos pensar en términos de lo que sucedería si estuviese cerrado, y de esta manera determinar la dirección de la fem inducida.
+		Consideremos el primero de los experimentos de Faraday. Se muestra el polo norte de un imán y una sección transversal de un anillo conductor cercano. Al empujar al imán hacia el anillo (o el anillo hacia el imán) se genera una corriente inducida en el anillo. ¿Cuál es su dirección?
+		Una espira de corriente crea un campo magnético en puntos distantes como el de un dipolo magnético, siendo una cara del anillo un polo norte y la cara opuesta un polo sur. El polo norte, como en las barras imantadas, es aquella cara a partir de la cual salen las líneas de B. Si, como lo predice la ley de Lenz, el anillo va a oponerse al movimiento del imán hacia él, la cara del anillo hacia el imán debe resultar ser un polo norte. Los dos polos norte -uno de la espira de corriente y el otro del imán- se repelen entre sí. La regla de la mano derecha aplicada al anillo al salir de la cara derecha de la espira, la corriente inducida debe ser como se muestra. La corriente va en sentido contrario a las manecillas del reloj cuando miramos a lo largo del imán hacia la espira.
+		Cuando empujamos el imán hacia el anillo (o el anillo hacia el imán), aparece una corriente inducida. En términos de la ley de Lenz esta acción de empujar es el “cambio” que produce la corriente inducida y, de acuerdo con esta ley, la corriente inducida se opone al “empuje”. Si jalamos el imán alejándolo de la bobina, la corriente inducida se opone al “jalón” creando un polo sur en la cara derecha del anillo. Para hacer de la cara derecha un polo sur, la corriente debe ser opuesta. Ya sea que jalemos o empujemos el imán, su movimiento es automáticamente opuesto.
+		El agente que causa que el imán se mueva, ya sea hacia la bobina o alejándose de ella, experimenta siempre una fuerza de resistencia y, por lo tanto, debe realizar trabajo. Del principio de conservación de la energía, se concluye que este trabajo efectuado sobre el sistema debe ser exactamente igual a la energía interna (Joule) producida en la bobina, puesto que estas son las únicas transferencias de energía que ocurren en el sistema. Si el imán se mueve más rápidamente, el agente efectúa un trabajo a una mayor velocidad y la velocidad de producción de la energía interna aumenta en consonancia.
+		Si cortamos el anillo y luego realizamos el experimento, no existe una corriente inducida, ningún cambio en la energía interna, ninguna fuerza sobre el imán, y no se requiere ningún trabajo para moverlo. Todavía existe una fem en el anillo, pero, al igual que una batería conectada a un circuito abierto, no se genera una corriente.
+		Si la corriente estuviese en la dirección opuesta a la mostrada, al mover el imán hacia el anillo, la cara del anillo hacia el imán seria un polo sur, lo cual jalaría a la barra imantada hacia el anillo. Solo necesitaríamos empujar al imán ligeramente para comenzar el proceso y, por lo tanto, la acción seria autoperpetua. El imán aceleraría hacia el anillo, aumentando su energía interna a una velocidad que iría aumentando con el tiempo. ¡Esto sería una situación en la que se obtendría algo a cambio de nada! No es necesario aclarar aquí esto no ocurre.
+		Apliquemos la ley de Lenz de manera diferente. Se muestran las líneas de $B$ para una barra imantada. *Desde este punto de vista el “cambio” es el aumento en $\phi _B$ a través del anillo provocado al acercar el imán. La corriente inducida se opone a este cambio creando un campo que tiende a oponerse al aumento de flujo causado por el imán en movimiento. Así, el campo debido a la corriente inducida debe apuntar de izquierda a derecha en el plano de la bobina, de acuerdo con nuestra conclusión preliminar.
+		Aquí no es significativo el hecho de que el campo inducido se oponga al campo del imán sino mas bien el hecho de que se opone al cambio, que en este caso es el aumento en $\phi _B$ a través del anillo. Si retiramos el imán, reducimos $\phi _B$ a través del anillo. El campo inducido debe oponerse ahora a esta disminución en $\phi _B$ (esto es, al cambio) reforzando el campo magnético. En cada caso el campo inducido se opone al cambio que le da origen.
+		Ahora podemos obtener la dirección de la corriente en la bobina pequeña. El campo solenoide apunta hacia la derecha y es creciente. La corriente debe oponerse a este aumento del flujo a través de la bobina y así debe crear un campo que se opone al campo solenoide. La corriente en la bobina esta, por lo tanto, en dirección opuesta a la del campo solenoide. Si la corriente en el campo solenoide estuviese decreciendo en lugar de creciendo, un argumento similar demuestra que la corriente inducida en la bobina tendría la misma dirección que la corriente en el campo solenoide.
+
+	\subsection{Corrientes parásitas o de Foucault}
+
+		Cuando el flujo magnético a través de un trozo grande de material conductor cambia, aparecen corrientes inducidas en el material. Estas corrientes se llaman corrientes de Foucault o corrientes parásitas. En ciertos casos, las corrientes parásitas pueden producir efectos indeseables. Por ejemplo, aumentan la energía interna y, por lo tanto, la temperatura del material puede aumentar. 
+
+
+		Por esta razón, los materiales sometidos a campos magnéticos cambiantes son a menudo laminados o constituidos por muchas capas delgadas entre sí. 
+		En lugar de un camino largo, las corrientes parásitas recorren muchos caminos cortos, aumentando por tanto la longitud total de sus trayectorias y la resistencia correspondiente; el calentamiento resistivo $\frac{\varepsilon ^2}{R}$ es menor, y el aumento en la energía interna es menor. Por otra parte, el calentamiento por medio de corrientes puede utilizarse ventajosamente, como en un horno de inducción, en el cual una muestra de material puede calentarse usando un campo magnético que cambie rápidamente. Los hornos de inducción se emplean en los casos en los cuales no es posible conseguir un contacto térmico con el material que desea calentarse, como cuando este esta dentro de una cámara de vacío.
+		Las corrientes parásitas son corrientes reales y producen los mismos efectos que las corrientes reales. En particular, se ejerce una fuerza $F=iL\times B$ en la parte de la trayectoria parásita que pasa a través del campo. Esta fuerza se transmite al material, y puede emplearse la ley de Lenz para demostrar que la fuerza se opone al movimiento del conductor. Esto da origen a una forma de frenado magnético, por lo que los campos magnéticos aplicados a una rueda que este girando o a una pista en movimiento producen fuerzas que desaceleran el movimiento. Un freno tal no tiene partes móviles o mecanismos de ninguna clase y no se halla sometido al desgaste por fricción de los frenos mecánicos ordinarios. Mas aun, es más eficiente a altas velocidades (por que la fuerza magnética aumenta con la velocidad relativa), donde el desgaste sobre los frenos mecánicos seria mayor.   
+
+
+\section{Material y Equipo}
+
+	\begin{itemize}
+		\item Imanes de Neodimio.
+		\item tubo de cobre.
+
+	\end{itemize}
+
+\section{Desarrollo}
+
+		
+
+\section{Resultados}
+	
+
+
+\section{Cuestionario}
+
+
+\section{Conclusiones}
+
+		\subsection{Molina Escobar Carlos}
+
+														
+\section{Bibliografía}
+
+\textit{Manual de prácticas electricidad y magnetismo, Revisión 2019, Instituto Politécnico Nacional Escuela Superior de Ingeniería Mecánica y Eléctrica, Departamento de Ingeniería de Comunicaciones y Electrónica}\\
+\textit{Serway, Raymond A. y John W. Jewett, Jr. Electricidad y magnetismo. Novena edición. ISBN: 978-607-522-490-9.}
+
+\end{multicols}
+
+\end{document}
